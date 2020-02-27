@@ -1,0 +1,27 @@
+
+Showing logs for build [32mmeta-salaboy-fmtok8s-email-mast-ml85w-1[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-6bkwf[0m
+{"level":"warn","ts":1582801251.8523479,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1582801251.8538604,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-salaboy-fmtok8s-email-mast-ml85w-1[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-ndk8r[0m
+failed to try resolving symlinks in path "/var/log/pods/**_meta-*******-fmtok8s-email-mast-ml85w-1-meta-pipeline-pnsrf-pod-453374_98d014af-5a7e-40da-a917-1adc9e6a0b88/step-working-dir-initializer-ndk8r/0.log": lstat /var/log/pods/**_meta-*******-fmtok8s-email-mast-ml85w-1-meta-pipeline-pnsrf-pod-453374_98d014af-5a7e-40da-a917-1adc9e6a0b88/step-working-dir-initializer-ndk8r/0.log: no such file or directory
+
+Showing logs for build [32mmeta-salaboy-fmtok8s-email-mast-ml85w-1[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+Unable to retrieve container logs for docker://28aadbd354e7a142fe24fcca0ca0145619e6a5e1f756b9d1cb179dd36f30a423
+
+Showing logs for build [32mmeta-salaboy-fmtok8s-email-mast-ml85w-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-salaboy-fmtok8s-email-mast-ml85w-jh24g[0m
+Unable to retrieve container logs for docker://9386ecce5c572c9fde20968dc8b1fdb486d0b1cbb1ec332fda7a35f84f30a356
+
+Showing logs for build [32mmeta-salaboy-fmtok8s-email-mast-ml85w-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Unable to retrieve container logs for docker://56c0cdd53970334f167e1fc6c273d0ce02a63f9e2fdbd9d52fb0a34412412c16
+
+Showing logs for build [32mmeta-salaboy-fmtok8s-email-mast-ml85w-1[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+Unable to retrieve container logs for docker://6b909d52e7cfb5f2761fb3ceaf3cff84072bc961d16f5206b2c9687996bd8154
+
+Showing logs for build [32mmeta-salaboy-fmtok8s-email-mast-ml85w-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Unable to retrieve container logs for docker://98d1c0b931c895564d97125bc23663539503ee4d08d39a4a67cebf4c199ea0b2
+
+Showing logs for build [32mmeta-salaboy-fmtok8s-email-mast-ml85w-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+Unable to retrieve container logs for docker://9f9bfcbc5dedaf0d26b448ae218e94adef87a7a2b5045a9493c1f447f08fd469
+[31m
+Pipeline failed on stage 'meta-pipeline' : container 'step-create-tekton-crds'. The execution of the pipeline has stopped.[0m
