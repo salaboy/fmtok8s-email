@@ -32,9 +32,19 @@ public class DemoApplication {
         return "Email v" + version;
     }
 
-    @PostMapping()
+    @PostMapping("/")
+    public void sendEmail(@RequestBody Map<String, String> email) {
+        String toEmail = email.get("toEmail");
+        String emailTitle = email.get("title");
+        String emailContent = email.get("content");
+        printEmail(toEmail, emailTitle, emailContent);
+    }
+
+
+    @PostMapping("/notification")
     public void sendEmailNotification(@RequestBody Proposal proposal) {
         String emailBody = "Dear " + proposal.getAuthor() + ", \n";
+        String emailTitle = "Conference Committee Communication";
         emailBody += "\t\t We are";
         if (proposal.isApproved()) {
             emailBody += " happy ";
@@ -50,9 +60,14 @@ public class DemoApplication {
             emailBody += " rejected ";
         }
         emailBody += "for this conference.";
+        printEmail(proposal.getEmail(),emailTitle, emailBody );
+    }
+
+    private void printEmail(String to, String title, String body){
         System.out.println("+-------------------------------------------------------------------+");
-        System.out.println("\t Email Sent to: " + proposal.getEmail());
-        System.out.println("\t Body: " + emailBody);
+        System.out.println("\t Email Sent to: " + to);
+        System.out.println("\t Email Title: " + title);
+        System.out.println("\t Email Body: " + body);
         System.out.println("+-------------------------------------------------------------------+\n\n");
     }
 
