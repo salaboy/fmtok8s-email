@@ -29,7 +29,7 @@ public class DemoApplication {
 
     @GetMapping("/info")
     public String infoWithVersion() {
-        return "Email v" + version;
+        return "{ \"name\" : \"Email Service\", \"version\" : \"" + version + "\" }";
     }
 
     @PostMapping("/")
