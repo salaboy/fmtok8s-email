@@ -6,6 +6,7 @@ import io.zeebe.client.api.response.ActivatedJob;
 import io.zeebe.client.api.worker.JobClient;
 import io.zeebe.spring.client.EnableZeebeClient;
 import io.zeebe.spring.client.annotation.ZeebeWorker;
+import io.zeebe.spring.client.config.ZeebeActuatorConfiguration;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
-@SpringBootApplication
+@SpringBootApplication()
 @RestController
 @EnableZeebeClient
 public class DemoApplication {
