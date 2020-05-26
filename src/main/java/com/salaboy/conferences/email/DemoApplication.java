@@ -7,6 +7,7 @@ import io.zeebe.client.api.worker.JobClient;
 import io.zeebe.spring.client.EnableZeebeClient;
 import io.zeebe.spring.client.annotation.ZeebeWorker;
 import io.zeebe.spring.client.config.ZeebeActuatorConfiguration;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,9 +15,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
-@SpringBootApplication()
+@SpringBootApplication
 @RestController
 @EnableZeebeClient
+@Slf4j
 public class DemoApplication {
 
     public static void main(String[] args) {
@@ -65,11 +67,11 @@ public class DemoApplication {
     }
 
     private void printEmail(String to, String title, String body){
-        System.out.println("+-------------------------------------------------------------------+");
-        System.out.println("\t Email Sent to: " + to);
-        System.out.println("\t Email Title: " + title);
-        System.out.println("\t Email Body: " + body);
-        System.out.println("+-------------------------------------------------------------------+\n\n");
+        log.info("+-------------------------------------------------------------------+");
+        log.info("\t Email Sent to: " + to);
+        log.info("\t Email Title: " + title);
+        log.info("\t Email Body: " + body);
+        log.info("+-------------------------------------------------------------------+\n\n");
     }
 
     @ZeebeWorker(name = "email-worker", type = "email")
