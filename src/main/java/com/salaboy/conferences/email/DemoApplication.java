@@ -32,7 +32,7 @@ public class DemoApplication {
 
     @GetMapping("/info")
     public String infoWithVersion() {
-        return "{ \"name\" : \"Email Service\", \"version\" : \"" + version + "\", \"source\": \"https://github.com/salaboy/fmtok8s-email/releases/tag/v"+version+"\" }";
+        return "{ \"name\" : \"Email Service\", \"version\" : \"" + version + "++\", \"source\": \"https://github.com/salaboy/fmtok8s-email/releases/tag/v"+version+"\" }";
     }
 
     @PostMapping("/")
