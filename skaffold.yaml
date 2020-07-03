@@ -2,7 +2,7 @@ apiVersion: skaffold/v1beta2
 kind: Config
 build:
   artifacts:
-  - image: camunda-consulting-de/fmtok8s-email
+  - image: camunda-researchanddevelopment/fmtok8s-email
     context: .
     docker: {}
   tagPolicy:
