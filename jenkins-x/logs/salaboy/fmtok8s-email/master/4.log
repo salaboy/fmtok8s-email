@@ -1,598 +1,845 @@
 
-Showing logs for build [32msalaboy-fmtok8s-email-master-re-5f74d-4[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-clz28[0m
-{"level":"info","ts":1590489278.8501267,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1590489278.8505807,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mmeta-salaboy-fmtok8s-email-mast-dgwlz-4[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-7crbm[0m
+{"level":"info","ts":1594198268.9372582,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594198268.9378717,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32msalaboy-fmtok8s-email-master-re-5f74d-4[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-lcc67[0m
-{"level":"info","ts":1590489280.1126196,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1590489280.1144392,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mmeta-salaboy-fmtok8s-email-mast-dgwlz-4[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-8lpsl[0m
+{"level":"info","ts":1594198269.9097657,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1594198269.9115038,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32msalaboy-fmtok8s-email-master-re-5f74d-4[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mmeta-salaboy-fmtok8s-email-mast-dgwlz-4[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32msalaboy-fmtok8s-email-master-re-5f74d-4[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-salaboy-fmtok8s-email-master-re-5f74d-pj2jp[0m
-{"level":"info","ts":1590489287.3700755,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1590489288.470547,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/fmtok8s-email.git @ v0.0.13 in path /workspace/source"}
+Showing logs for build [32mmeta-salaboy-fmtok8s-email-mast-dgwlz-4[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-salaboy-fmtok8s-email-mast-dgwlz-dmkt2[0m
+{"level":"info","ts":1594198276.0003,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594198277.1599512,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/fmtok8s-email.git @ 4c18400e829ae69cc93d2e3df03f6388b096212d in path /workspace/source"}
 
-Showing logs for build [32msalaboy-fmtok8s-email-master-re-5f74d-4[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:8b5944adae7b00fe2eec4f3c5c46fba86ff3696f
+Showing logs for build [32mmeta-salaboy-fmtok8s-email-mast-dgwlz-4[0m stage [32mmeta-pipeline[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mmeta-salaboy-fmtok8s-email-mast-dgwlz-4[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:4c18400e829ae69cc93d2e3df03f6388b096212d
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32msalaboy-fmtok8s-email-master-re-5f74d-4[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
-Generated Git credentials file /workspace/xdg_config/git/credentials
+Showing logs for build [32mmeta-salaboy-fmtok8s-email-mast-dgwlz-4[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+SKIP merge-pull-refs: Nothing to merge
 
-Showing logs for build [32msalaboy-fmtok8s-email-master-re-5f74d-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-mvn-deploy[0m
-Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
+Showing logs for build [32mmeta-salaboy-fmtok8s-email-mast-dgwlz-4[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Effective pipeline written to jenkins-x-release-effective.yml
+
+Showing logs for build [32mmeta-salaboy-fmtok8s-email-mast-dgwlz-4[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+running command: echo \$(**-release-version) > VERSION
+
+running command: mvn versions:set -DnewVersion=\$(cat VERSION)
 [INFO] Scanning for projects...
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/springframework/boot/spring-boot-starter-parent/2.2.6.RELEASE/spring-boot-starter-parent-2.2.6.RELEASE.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/springframework/boot/spring-boot-starter-parent/2.2.6.RELEASE/spring-boot-starter-parent-2.2.6.RELEASE.pom (8.1 kB at 29 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/springframework/boot/spring-boot-dependencies/2.2.6.RELEASE/spring-boot-dependencies-2.2.6.RELEASE.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/springframework/boot/spring-boot-dependencies/2.2.6.RELEASE/spring-boot-dependencies-2.2.6.RELEASE.pom (127 kB at 1.4 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/com/fasterxml/jackson/jackson-bom/2.10.3/jackson-bom-2.10.3.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/com/fasterxml/jackson/jackson-bom/2.10.3/jackson-bom-2.10.3.pom (13 kB at 834 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/com/fasterxml/jackson/jackson-parent/2.10/jackson-parent-2.10.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/com/fasterxml/jackson/jackson-parent/2.10/jackson-parent-2.10.pom (8.3 kB at 201 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/com/fasterxml/oss-parent/38/oss-parent-38.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/com/fasterxml/oss-parent/38/oss-parent-38.pom (23 kB at 922 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/io/micrometer/micrometer-bom/1.3.6/micrometer-bom-1.3.6.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/io/micrometer/micrometer-bom/1.3.6/micrometer-bom-1.3.6.pom (6.6 kB at 102 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/io/netty/netty-bom/4.1.48.Final/netty-bom-4.1.48.Final.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/io/netty/netty-bom/4.1.48.Final/netty-bom-4.1.48.Final.pom (7.9 kB at 495 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/oss/oss-parent/7/oss-parent-7.pom (4.8 kB at 302 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/io/projectreactor/reactor-bom/Dysprosium-SR6/reactor-bom-Dysprosium-SR6.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/io/projectreactor/reactor-bom/Dysprosium-SR6/reactor-bom-Dysprosium-SR6.pom (4.1 kB at 239 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/io/rsocket/rsocket-bom/1.0.0-RC6/rsocket-bom-1.0.0-RC6.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/io/rsocket/rsocket-bom/1.0.0-RC6/rsocket-bom-1.0.0-RC6.pom (3.2 kB at 225 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/logging/log4j/log4j-bom/2.12.1/log4j-bom-2.12.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/logging/log4j/log4j-bom/2.12.1/log4j-bom-2.12.1.pom (7.2 kB at 313 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/logging/logging-parent/1/logging-parent-1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/logging/logging-parent/1/logging-parent-1.pom (3.2 kB at 263 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/apache/18/apache-18.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/apache/18/apache-18.pom (16 kB at 1.3 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/eclipse/jetty/jetty-bom/9.4.27.v20200227/jetty-bom-9.4.27.v20200227.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/eclipse/jetty/jetty-bom/9.4.27.v20200227/jetty-bom-9.4.27.v20200227.pom (17 kB at 1.0 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/glassfish/jersey/jersey-bom/2.29.1/jersey-bom-2.29.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/glassfish/jersey/jersey-bom/2.29.1/jersey-bom-2.29.1.pom (19 kB at 1.3 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/eclipse/ee4j/project/1.0.5/project-1.0.5.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/eclipse/ee4j/project/1.0.5/project-1.0.5.pom (13 kB at 169 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/jetbrains/kotlin/kotlin-bom/1.3.71/kotlin-bom-1.3.71.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/jetbrains/kotlin/kotlin-bom/1.3.71/kotlin-bom-1.3.71.pom (8.8 kB at 439 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.3.5/kotlinx-coroutines-bom-1.3.5.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.3.5/kotlinx-coroutines-bom-1.3.5.pom (4.8 kB at 284 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/junit/junit-bom/5.5.2/junit-bom-5.5.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/junit/junit-bom/5.5.2/junit-bom-5.5.2.pom (4.4 kB at 316 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/springframework/spring-framework-bom/5.2.5.RELEASE/spring-framework-bom-5.2.5.RELEASE.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/springframework/spring-framework-bom/5.2.5.RELEASE/spring-framework-bom-5.2.5.RELEASE.pom (5.3 kB at 352 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/springframework/data/spring-data-releasetrain/Moore-SR6/spring-data-releasetrain-Moore-SR6.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/springframework/data/spring-data-releasetrain/Moore-SR6/spring-data-releasetrain-Moore-SR6.pom (4.8 kB at 76 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/springframework/data/build/spring-data-build/2.2.6.RELEASE/spring-data-build-2.2.6.RELEASE.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/springframework/data/build/spring-data-build/2.2.6.RELEASE/spring-data-build-2.2.6.RELEASE.pom (7.1 kB at 505 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/springframework/integration/spring-integration-bom/5.2.5.RELEASE/spring-integration-bom-5.2.5.RELEASE.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/springframework/integration/spring-integration-bom/5.2.5.RELEASE/spring-integration-bom-5.2.5.RELEASE.pom (9.0 kB at 121 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/springframework/security/spring-security-bom/5.2.2.RELEASE/spring-security-bom-5.2.2.RELEASE.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/springframework/security/spring-security-bom/5.2.2.RELEASE/spring-security-bom-5.2.2.RELEASE.pom (5.4 kB at 387 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/springframework/session/spring-session-bom/Corn-SR2/spring-session-bom-Corn-SR2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/springframework/session/spring-session-bom/Corn-SR2/spring-session-bom-Corn-SR2.pom (2.8 kB at 35 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/springframework/boot/spring-boot-maven-plugin/2.2.6.RELEASE/spring-boot-maven-plugin-2.2.6.RELEASE.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/springframework/boot/spring-boot-maven-plugin/2.2.6.RELEASE/spring-boot-maven-plugin-2.2.6.RELEASE.pom (5.0 kB at 331 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/springframework/boot/spring-boot-tools/2.2.6.RELEASE/spring-boot-tools-2.2.6.RELEASE.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/springframework/boot/spring-boot-tools/2.2.6.RELEASE/spring-boot-tools-2.2.6.RELEASE.pom (1.8 kB at 126 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/springframework/boot/spring-boot-parent/2.2.6.RELEASE/spring-boot-parent-2.2.6.RELEASE.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/springframework/boot/spring-boot-parent/2.2.6.RELEASE/spring-boot-parent-2.2.6.RELEASE.pom (1.8 kB at 88 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/springframework/boot/spring-boot-maven-plugin/2.2.6.RELEASE/spring-boot-maven-plugin-2.2.6.RELEASE.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/springframework/boot/spring-boot-maven-plugin/2.2.6.RELEASE/spring-boot-maven-plugin-2.2.6.RELEASE.jar (69 kB at 4.6 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.pom (7.1 kB at 595 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-plugins/25/maven-plugins-25.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-plugins/25/maven-plugins-25.pom (9.6 kB at 682 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/24/maven-parent-24.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/24/maven-parent-24.pom (37 kB at 551 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/apache/14/apache-14.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/apache/14/apache-14.pom (15 kB at 1.2 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.jar (34 kB at 2.8 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M1/maven-surefire-plugin-3.0.0-M1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M1/maven-surefire-plugin-3.0.0-M1.pom (6.4 kB at 579 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/surefire/surefire/3.0.0-M1/surefire-3.0.0-M1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/surefire/surefire/3.0.0-M1/surefire-3.0.0-M1.pom (22 kB at 342 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/33/maven-parent-33.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/33/maven-parent-33.pom (44 kB at 4.0 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/apache/21/apache-21.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/apache/21/apache-21.pom (17 kB at 1.4 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M1/maven-surefire-plugin-3.0.0-M1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M1/maven-surefire-plugin-3.0.0-M1.jar (40 kB at 3.3 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-clean-plugin/3.1.0/maven-clean-plugin-3.1.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-clean-plugin/3.1.0/maven-clean-plugin-3.1.0.pom (5.2 kB at 64 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-plugins/31/maven-plugins-31.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-plugins/31/maven-plugins-31.pom (10 kB at 1.0 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/31/maven-parent-31.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/31/maven-parent-31.pom (43 kB at 549 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/apache/19/apache-19.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/apache/19/apache-19.pom (15 kB at 1.3 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-clean-plugin/3.1.0/maven-clean-plugin-3.1.0.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-clean-plugin/3.1.0/maven-clean-plugin-3.1.0.jar (30 kB at 2.8 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-resources-plugin/3.1.0/maven-resources-plugin-3.1.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-resources-plugin/3.1.0/maven-resources-plugin-3.1.0.pom (7.2 kB at 551 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-resources-plugin/3.1.0/maven-resources-plugin-3.1.0.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-resources-plugin/3.1.0/maven-resources-plugin-3.1.0.jar (32 kB at 2.9 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-jar-plugin/3.1.2/maven-jar-plugin-3.1.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-jar-plugin/3.1.2/maven-jar-plugin-3.1.2.pom (7.3 kB at 609 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-plugins/33/maven-plugins-33.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-plugins/33/maven-plugins-33.pom (11 kB at 92 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-jar-plugin/3.1.2/maven-jar-plugin-3.1.2.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-jar-plugin/3.1.2/maven-jar-plugin-3.1.2.jar (28 kB at 2.3 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-compiler-plugin/3.8.1/maven-compiler-plugin-3.8.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-compiler-plugin/3.8.1/maven-compiler-plugin-3.8.1.pom (12 kB at 1.2 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-compiler-plugin/3.8.1/maven-compiler-plugin-3.8.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-compiler-plugin/3.8.1/maven-compiler-plugin-3.8.1.jar (62 kB at 875 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.pom (6.4 kB at 535 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.jar (33 kB at 448 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-site-plugin/3.8.2/maven-site-plugin-3.8.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-site-plugin/3.8.2/maven-site-plugin-3.8.2.pom (24 kB at 1.5 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-site-plugin/3.8.2/maven-site-plugin-3.8.2.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-site-plugin/3.8.2/maven-site-plugin-3.8.2.jar (136 kB at 2.0 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/johnzon/johnzon-maven-plugin/1.2.3/johnzon-maven-plugin-1.2.3.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/johnzon/johnzon-maven-plugin/1.2.3/johnzon-maven-plugin-1.2.3.pom (3.6 kB at 211 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/johnzon/johnzon/1.2.3/johnzon-1.2.3.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/johnzon/johnzon/1.2.3/johnzon-1.2.3.pom (25 kB at 1.4 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/johnzon/johnzon-maven-plugin/1.2.3/johnzon-maven-plugin-1.2.3.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/johnzon/johnzon-maven-plugin/1.2.3/johnzon-maven-plugin-1.2.3.jar (26 kB at 1.7 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/jetbrains/kotlin/kotlin-maven-plugin/1.3.71/kotlin-maven-plugin-1.3.71.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/jetbrains/kotlin/kotlin-maven-plugin/1.3.71/kotlin-maven-plugin-1.3.71.pom (5.9 kB at 266 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/jetbrains/kotlin/kotlin-project/1.3.71/kotlin-project-1.3.71.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/jetbrains/kotlin/kotlin-project/1.3.71/kotlin-project-1.3.71.pom (10 kB at 775 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/jetbrains/kotlin/kotlin-maven-plugin/1.3.71/kotlin-maven-plugin-1.3.71.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/jetbrains/kotlin/kotlin-maven-plugin/1.3.71/kotlin-maven-plugin-1.3.71.jar (80 kB at 4.7 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/jooq/jooq-codegen-maven/3.12.4/jooq-codegen-maven-3.12.4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/jooq/jooq-codegen-maven/3.12.4/jooq-codegen-maven-3.12.4.pom (3.5 kB at 206 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/jooq/jooq-parent/3.12.4/jooq-parent-3.12.4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/jooq/jooq-parent/3.12.4/jooq-parent-3.12.4.pom (20 kB at 1.3 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/jooq/jooq-codegen-maven/3.12.4/jooq-codegen-maven-3.12.4.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/jooq/jooq-codegen-maven/3.12.4/jooq-codegen-maven-3.12.4.jar (17 kB at 1.1 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-antrun-plugin/1.8/maven-antrun-plugin-1.8.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-antrun-plugin/1.8/maven-antrun-plugin-1.8.pom (3.3 kB at 301 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-plugins/27/maven-plugins-27.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-plugins/27/maven-plugins-27.pom (11 kB at 1.0 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/26/maven-parent-26.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/26/maven-parent-26.pom (40 kB at 3.6 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/apache/16/apache-16.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/apache/16/apache-16.pom (15 kB at 1.5 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-antrun-plugin/1.8/maven-antrun-plugin-1.8.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-antrun-plugin/1.8/maven-antrun-plugin-1.8.jar (36 kB at 2.8 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-assembly-plugin/3.1.1/maven-assembly-plugin-3.1.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-assembly-plugin/3.1.1/maven-assembly-plugin-3.1.1.pom (15 kB at 1.4 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-assembly-plugin/3.1.1/maven-assembly-plugin-3.1.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-assembly-plugin/3.1.1/maven-assembly-plugin-3.1.1.jar (236 kB at 16 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-dependency-plugin/3.1.2/maven-dependency-plugin-3.1.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-dependency-plugin/3.1.2/maven-dependency-plugin-3.1.2.pom (16 kB at 558 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-plugins/34/maven-plugins-34.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-plugins/34/maven-plugins-34.pom (11 kB at 891 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/34/maven-parent-34.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/34/maven-parent-34.pom (43 kB at 3.1 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/apache/23/apache-23.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/apache/23/apache-23.pom (18 kB at 267 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-dependency-plugin/3.1.2/maven-dependency-plugin-3.1.2.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-dependency-plugin/3.1.2/maven-dependency-plugin-3.1.2.jar (172 kB at 9.1 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-release-plugin/2.5.3/maven-release-plugin-2.5.3.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-release-plugin/2.5.3/maven-release-plugin-2.5.3.pom (11 kB at 1.0 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/release/maven-release/2.5.3/maven-release-2.5.3.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/release/maven-release/2.5.3/maven-release-2.5.3.pom (5.0 kB at 457 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/27/maven-parent-27.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/27/maven-parent-27.pom (41 kB at 3.4 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/apache/17/apache-17.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/apache/17/apache-17.pom (16 kB at 1.3 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-release-plugin/2.5.3/maven-release-plugin-2.5.3.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-release-plugin/2.5.3/maven-release-plugin-2.5.3.jar (53 kB at 736 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-enforcer-plugin/3.0.0-M3/maven-enforcer-plugin-3.0.0-M3.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-enforcer-plugin/3.0.0-M3/maven-enforcer-plugin-3.0.0-M3.pom (7.3 kB at 306 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/enforcer/enforcer/3.0.0-M3/enforcer-3.0.0-M3.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/enforcer/enforcer/3.0.0-M3/enforcer-3.0.0-M3.pom (7.8 kB at 557 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-enforcer-plugin/3.0.0-M3/maven-enforcer-plugin-3.0.0-M3.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-enforcer-plugin/3.0.0-M3/maven-enforcer-plugin-3.0.0-M3.jar (27 kB at 2.1 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-failsafe-plugin/2.22.2/maven-failsafe-plugin-2.22.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-failsafe-plugin/2.22.2/maven-failsafe-plugin-2.22.2.pom (12 kB at 185 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/surefire/surefire/2.22.2/surefire-2.22.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/surefire/surefire/2.22.2/surefire-2.22.2.pom (26 kB at 2.3 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-failsafe-plugin/2.22.2/maven-failsafe-plugin-2.22.2.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-failsafe-plugin/2.22.2/maven-failsafe-plugin-2.22.2.jar (294 kB at 3.9 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-invoker-plugin/3.2.1/maven-invoker-plugin-3.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-invoker-plugin/3.2.1/maven-invoker-plugin-3.2.1.pom (14 kB at 784 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-invoker-plugin/3.2.1/maven-invoker-plugin-3.2.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-invoker-plugin/3.2.1/maven-invoker-plugin-3.2.1.jar (127 kB at 7.5 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-help-plugin/3.2.0/maven-help-plugin-3.2.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-help-plugin/3.2.0/maven-help-plugin-3.2.0.pom (11 kB at 868 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-help-plugin/3.2.0/maven-help-plugin-3.2.0.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-help-plugin/3.2.0/maven-help-plugin-3.2.0.jar (86 kB at 1.3 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-javadoc-plugin/3.1.1/maven-javadoc-plugin-3.1.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-javadoc-plugin/3.1.1/maven-javadoc-plugin-3.1.1.pom (18 kB at 1.5 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-javadoc-plugin/3.1.1/maven-javadoc-plugin-3.1.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-javadoc-plugin/3.1.1/maven-javadoc-plugin-3.1.1.jar (481 kB at 6.2 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-shade-plugin/3.2.2/maven-shade-plugin-3.2.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-shade-plugin/3.2.2/maven-shade-plugin-3.2.2.pom (10 kB at 401 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-shade-plugin/3.2.2/maven-shade-plugin-3.2.2.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-shade-plugin/3.2.2/maven-shade-plugin-3.2.2.jar (131 kB at 8.7 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-source-plugin/3.1.0/maven-source-plugin-3.1.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-source-plugin/3.1.0/maven-source-plugin-3.1.0.pom (5.5 kB at 426 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-source-plugin/3.1.0/maven-source-plugin-3.1.0.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-source-plugin/3.1.0/maven-source-plugin-3.1.0.jar (31 kB at 2.4 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-surefire-plugin/2.22.2/maven-surefire-plugin-2.22.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-surefire-plugin/2.22.2/maven-surefire-plugin-2.22.2.pom (5.0 kB at 499 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-surefire-plugin/2.22.2/maven-surefire-plugin-2.22.2.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-surefire-plugin/2.22.2/maven-surefire-plugin-2.22.2.jar (41 kB at 4.1 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-war-plugin/3.2.3/maven-war-plugin-3.2.3.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-war-plugin/3.2.3/maven-war-plugin-3.2.3.pom (9.6 kB at 141 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-war-plugin/3.2.3/maven-war-plugin-3.2.3.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/plugins/maven-war-plugin/3.2.3/maven-war-plugin-3.2.3.jar (91 kB at 8.3 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/mojo/build-helper-maven-plugin/3.0.0/build-helper-maven-plugin-3.0.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/mojo/build-helper-maven-plugin/3.0.0/build-helper-maven-plugin-3.0.0.pom (5.8 kB at 578 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/mojo/mojo-parent/40/mojo-parent-40.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/mojo/mojo-parent/40/mojo-parent-40.pom (34 kB at 3.4 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/mojo/build-helper-maven-plugin/3.0.0/build-helper-maven-plugin-3.0.0.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/mojo/build-helper-maven-plugin/3.0.0/build-helper-maven-plugin-3.0.0.jar (64 kB at 5.4 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/mojo/exec-maven-plugin/1.6.0/exec-maven-plugin-1.6.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/mojo/exec-maven-plugin/1.6.0/exec-maven-plugin-1.6.0.pom (13 kB at 1.0 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/mojo/exec-maven-plugin/1.6.0/exec-maven-plugin-1.6.0.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/mojo/exec-maven-plugin/1.6.0/exec-maven-plugin-1.6.0.jar (58 kB at 3.9 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/mojo/versions-maven-plugin/2.7/versions-maven-plugin-2.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/mojo/versions-maven-plugin/2.7/versions-maven-plugin-2.7.pom (17 kB at 1.5 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/mojo/versions-maven-plugin/2.7/versions-maven-plugin-2.7.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/mojo/versions-maven-plugin/2.7/versions-maven-plugin-2.7.jar (310 kB at 22 MB/s)
 [INFO] 
 [INFO] --------------< com.*******.conferences:conference-email >--------------
-[INFO] Building From Monolith to K8S :: Email Service 0.0.13
+[INFO] Building From Monolith to K8S :: Email Service 0.0.1-SNAPSHOT
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ conference-email ---
+[INFO] --- versions-maven-plugin:2.7:set (default-cli) @ conference-email ---
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom (1.6 kB at 22 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven/2.2.1/maven-2.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven/2.2.1/maven-2.2.1.pom (22 kB at 2.5 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/11/maven-parent-11.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/11/maven-parent-11.pom (32 kB at 2.7 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/apache/5/apache-5.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/apache/5/apache-5.pom (4.1 kB at 65 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.pom (6.8 kB at 685 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/2.0.2/plexus-2.0.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/2.0.2/plexus-2.0.2.pom (12 kB at 155 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom (3.1 kB at 259 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom (1.9 kB at 208 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom (3.9 kB at 180 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3.pom (492 B at 49 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4.pom (5.7 kB at 101 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/junit/junit/4.12/junit-4.12.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/junit/junit/4.12/junit-4.12.pom (24 kB at 2.2 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom (766 B at 77 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom (2.0 kB at 164 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.pom (6.9 kB at 686 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom (3.1 kB at 313 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.pom (880 B at 80 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom (12 kB at 1.2 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom (2.2 kB at 218 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom (3.2 kB at 295 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.pom (889 B at 99 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-components/1.1.14/plexus-components-1.1.14.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-components/1.1.14/plexus-components-1.1.14.pom (5.8 kB at 89 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom (2.0 kB at 140 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.pom (1.9 kB at 190 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/slf4j/slf4j-parent/1.5.6/slf4j-parent-1.5.6.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/slf4j/slf4j-parent/1.5.6/slf4j-parent-1.5.6.pom (7.9 kB at 126 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.pom (3.0 kB at 298 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.pom (2.2 kB at 241 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.pom (1.9 kB at 206 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/reporting/maven-reporting/2.2.1/maven-reporting-2.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/reporting/maven-reporting/2.2.1/maven-reporting-2.2.1.pom (1.4 kB at 144 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.pom (2.0 kB at 227 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia/1.1/doxia-1.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia/1.1/doxia-1.1.pom (15 kB at 1.5 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.pom (1.6 kB at 175 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.pom (3.5 kB at 348 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-containers/1.0-alpha-30/plexus-containers-1.0-alpha-30.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-containers/1.0-alpha-30/plexus-containers-1.0-alpha-30.pom (1.9 kB at 28 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom (9.0 kB at 997 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5.pom (2.3 kB at 283 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-classworlds/1.2-alpha-9/plexus-classworlds-1.2-alpha-9.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-classworlds/1.2-alpha-9/plexus-classworlds-1.2-alpha-9.pom (3.2 kB at 322 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/1.0.10/plexus-1.0.10.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/1.0.10/plexus-1.0.10.pom (8.2 kB at 135 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom (2.2 kB at 197 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom (1.7 kB at 171 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom (2.8 kB at 45 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom (1.9 kB at 214 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-cli/commons-cli/1.2/commons-cli-1.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-cli/commons-cli/1.2/commons-cli-1.2.pom (8.0 kB at 887 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/commons/commons-parent/11/commons-parent-11.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/commons/commons-parent/11/commons-parent-11.pom (25 kB at 362 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/apache/4/apache-4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/apache/4/apache-4.pom (4.5 kB at 450 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.pom (2.3 kB at 254 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven/3.0/maven-3.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven/3.0/maven-3.0.pom (22 kB at 2.2 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/15/maven-parent-15.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/15/maven-parent-15.pom (24 kB at 2.4 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/apache/6/apache-6.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/apache/6/apache-6.pom (13 kB at 1.4 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-model/3.0/maven-model-3.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-model/3.0/maven-model-3.0.pom (3.9 kB at 324 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.pom (3.3 kB at 370 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom (17 kB at 1.9 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.pom (1.9 kB at 28 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.pom (5.4 kB at 537 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/inject/guice-plexus/1.4.2/guice-plexus-1.4.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/inject/guice-plexus/1.4.2/guice-plexus-1.4.2.pom (3.1 kB at 313 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/inject/guice-bean/1.4.2/guice-bean-1.4.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/inject/guice-bean/1.4.2/guice-bean-1.4.2.pom (2.6 kB at 290 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/sisu-inject/1.4.2/sisu-inject-1.4.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/sisu-inject/1.4.2/sisu-inject-1.4.2.pom (1.2 kB at 125 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/sisu-parent/1.4.2/sisu-parent-1.4.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/sisu-parent/1.4.2/sisu-parent-1.4.2.pom (7.8 kB at 864 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/forge/forge-parent/6/forge-parent-6.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/forge/forge-parent/6/forge-parent-6.pom (11 kB at 978 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-component-annotations/1.5.4/plexus-component-annotations-1.5.4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-component-annotations/1.5.4/plexus-component-annotations-1.5.4.pom (815 B at 13 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-containers/1.5.4/plexus-containers-1.5.4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-containers/1.5.4/plexus-containers-1.5.4.pom (4.2 kB at 471 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/2.0.5/plexus-2.0.5.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/2.0.5/plexus-2.0.5.pom (17 kB at 1.9 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.pom (4.0 kB at 60 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom (3.3 kB at 333 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.pom (5.5 kB at 546 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7.pom (11 kB at 168 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.pom (2.1 kB at 172 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.pom (7.1 kB at 709 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.pom (1.3 kB at 105 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/classworlds/classworlds/1.1/classworlds-1.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/classworlds/classworlds/1.1/classworlds-1.1.pom (3.3 kB at 332 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom (3.0 kB at 370 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/spice/spice-parent/12/spice-parent-12.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/spice/spice-parent/12/spice-parent-12.pom (6.8 kB at 618 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/forge/forge-parent/4/forge-parent-4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/forge/forge-parent/4/forge-parent-4.pom (8.4 kB at 933 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom (5.1 kB at 572 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom (2.1 kB at 34 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.pom (1.5 kB at 162 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.pom (2.4 kB at 237 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/shared/maven-shared-components/15/maven-shared-components-15.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/shared/maven-shared-components/15/maven-shared-components-15.pom (9.3 kB at 1.0 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/16/maven-parent-16.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/16/maven-parent-16.pom (23 kB at 423 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/apache/7/apache-7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/apache/7/apache-7.pom (14 kB at 1.6 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.pom (1.4 kB at 139 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia/1.0/doxia-1.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia/1.0/doxia-1.0.pom (9.6 kB at 146 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/10/maven-parent-10.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/10/maven-parent-10.pom (32 kB at 3.2 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/reporting/maven-reporting-impl/3.0.0/maven-reporting-impl-3.0.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/reporting/maven-reporting-impl/3.0.0/maven-reporting-impl-3.0.0.pom (7.6 kB at 846 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/shared/maven-shared-components/30/maven-shared-components-30.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/shared/maven-shared-components/30/maven-shared-components-30.pom (4.6 kB at 63 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/30/maven-parent-30.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-parent/30/maven-parent-30.pom (41 kB at 4.1 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-core/3.0/maven-core-3.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-core/3.0/maven-core-3.0.pom (6.6 kB at 737 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-settings/3.0/maven-settings-3.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-settings/3.0/maven-settings-3.0.pom (1.9 kB at 30 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.pom (2.2 kB at 185 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.pom (910 B at 13 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom (5.4 kB at 595 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/2.0.7/plexus-2.0.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/2.0.7/plexus-2.0.7.pom (17 kB at 1.9 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom (815 B at 102 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom (4.2 kB at 72 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.pom (1.9 kB at 241 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.pom (2.2 kB at 250 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.pom (2.5 kB at 37 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/aether/aether-api/1.7/aether-api-1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/aether/aether-api/1.7/aether-api-1.7.pom (1.7 kB at 167 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/aether/aether-parent/1.7/aether-parent-1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/aether/aether-parent/1.7/aether-parent-1.7.pom (7.7 kB at 772 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/aether/aether-util/1.7/aether-util-1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/aether/aether-util/1.7/aether-util-1.7.pom (2.1 kB at 33 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.pom (3.7 kB at 410 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.pom (1.7 kB at 218 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/shared/maven-shared-utils/3.2.0/maven-shared-utils-3.2.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/shared/maven-shared-utils/3.2.0/maven-shared-utils-3.2.0.pom (4.9 kB at 545 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-io/commons-io/2.5/commons-io-2.5.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-io/commons-io/2.5/commons-io-2.5.pom (13 kB at 1.3 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/commons/commons-parent/39/commons-parent-39.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/commons/commons-parent/39/commons-parent-39.pom (62 kB at 5.6 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-sink-api/1.7/doxia-sink-api-1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-sink-api/1.7/doxia-sink-api-1.7.pom (1.5 kB at 23 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia/1.7/doxia-1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia/1.7/doxia-1.7.pom (15 kB at 1.7 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-logging-api/1.7/doxia-logging-api-1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-logging-api/1.7/doxia-logging-api-1.7.pom (1.5 kB at 192 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-decoration-model/1.7.4/doxia-decoration-model-1.7.4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-decoration-model/1.7.4/doxia-decoration-model-1.7.4.pom (3.4 kB at 48 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-sitetools/1.7.4/doxia-sitetools-1.7.4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-sitetools/1.7.4/doxia-sitetools-1.7.4.pom (14 kB at 1.6 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom (748 B at 83 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom (3.8 kB at 471 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom (22 kB at 359 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/spice/spice-parent/17/spice-parent-17.pom (6.8 kB at 845 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/forge/forge-parent/10/forge-parent-10.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/forge/forge-parent/10/forge-parent-10.pom (14 kB at 678 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.pom (3.8 kB at 479 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom (20 kB at 2.3 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-core/1.7/doxia-core-1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-core/1.7/doxia-core-1.7.pom (4.1 kB at 451 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-lang/commons-lang/2.4/commons-lang-2.4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-lang/commons-lang/2.4/commons-lang-2.4.pom (14 kB at 1.6 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/commons/commons-parent/9/commons-parent-9.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/commons/commons-parent/9/commons-parent-9.pom (22 kB at 2.4 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/httpcomponents/httpclient/4.0.2/httpclient-4.0.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/httpcomponents/httpclient/4.0.2/httpclient-4.0.2.pom (7.5 kB at 833 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/httpcomponents/httpcomponents-client/4.0.2/httpcomponents-client-4.0.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/httpcomponents/httpcomponents-client/4.0.2/httpcomponents-client-4.0.2.pom (9.0 kB at 1.1 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/httpcomponents/project/4.1/project-4.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/httpcomponents/project/4.1/project-4.1.pom (16 kB at 245 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.pom (4.9 kB at 543 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/httpcomponents/httpcomponents-core/4.0.1/httpcomponents-core-4.0.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/httpcomponents/httpcomponents-core/4.0.1/httpcomponents-core-4.0.1.pom (9.4 kB at 1.0 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/httpcomponents/project/4.0/project-4.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/httpcomponents/project/4.0/project-4.0.pom (13 kB at 1.5 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom (18 kB at 2.0 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/commons/commons-parent/5/commons-parent-5.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/commons/commons-parent/5/commons-parent-5.pom (16 kB at 1.3 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-codec/commons-codec/1.3/commons-codec-1.3.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-codec/commons-codec/1.3/commons-codec-1.3.pom (6.1 kB at 678 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/xmlunit/xmlunit/1.5/xmlunit-1.5.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/xmlunit/xmlunit/1.5/xmlunit-1.5.pom (3.0 kB at 339 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-site-renderer/1.7.4/doxia-site-renderer-1.7.4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-site-renderer/1.7.4/doxia-site-renderer-1.7.4.pom (6.7 kB at 835 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-skin-model/1.7.4/doxia-skin-model-1.7.4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-skin-model/1.7.4/doxia-skin-model-1.7.4.pom (3.0 kB at 378 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-module-xhtml/1.7/doxia-module-xhtml-1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-module-xhtml/1.7/doxia-module-xhtml-1.7.pom (1.6 kB at 204 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-modules/1.7/doxia-modules-1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-modules/1.7/doxia-modules-1.7.pom (2.6 kB at 238 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-i18n/1.0-beta-7/plexus-i18n-1.0-beta-7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-i18n/1.0-beta-7/plexus-i18n-1.0-beta-7.pom (1.1 kB at 132 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-components/1.1.12/plexus-components-1.1.12.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-components/1.1.12/plexus-components-1.1.12.pom (3.0 kB at 375 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/1.4.1/plexus-utils-1.4.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/1.4.1/plexus-utils-1.4.1.pom (1.9 kB at 31 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-velocity/1.2/plexus-velocity-1.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-velocity/1.2/plexus-velocity-1.2.pom (2.8 kB at 313 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-components/4.0/plexus-components-4.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-components/4.0/plexus-components-4.0.pom (2.7 kB at 332 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/4.0/plexus-4.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/4.0/plexus-4.0.pom (22 kB at 2.4 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-collections/commons-collections/3.1/commons-collections-3.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-collections/commons-collections/3.1/commons-collections-3.1.pom (6.1 kB at 760 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/velocity/velocity/1.7/velocity-1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/velocity/velocity/1.7/velocity-1.7.pom (11 kB at 1.1 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.pom (13 kB at 1.3 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.pom (18 kB at 2.3 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.pom (357 B at 36 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-logging/commons-logging/1.0.3/commons-logging-1.0.3.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-logging/commons-logging/1.0.3/commons-logging-1.0.3.pom (866 B at 62 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-digester/commons-digester/1.8/commons-digester-1.8.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-digester/commons-digester/1.8/commons-digester-1.8.pom (7.0 kB at 778 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-logging/commons-logging/1.1/commons-logging-1.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-logging/commons-logging/1.1/commons-logging-1.1.pom (6.2 kB at 562 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/log4j/log4j/1.2.12/log4j-1.2.12.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/log4j/log4j/1.2.12/log4j-1.2.12.pom (145 B at 16 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/logkit/logkit/1.0.1/logkit-1.0.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/logkit/logkit/1.0.1/logkit-1.0.1.pom (147 B at 18 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/avalon-framework/avalon-framework/4.1.3/avalon-framework-4.1.3.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/avalon-framework/avalon-framework/4.1.3/avalon-framework-4.1.3.pom (167 B at 19 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/javax/servlet/servlet-api/2.3/servlet-api-2.3.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/javax/servlet/servlet-api/2.3/servlet-api-2.3.pom (156 B at 17 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-chain/commons-chain/1.1/commons-chain-1.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-chain/commons-chain/1.1/commons-chain-1.1.pom (6.0 kB at 752 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-digester/commons-digester/1.6/commons-digester-1.6.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-digester/commons-digester/1.6/commons-digester-1.6.pom (974 B at 15 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-beanutils/commons-beanutils/1.6/commons-beanutils-1.6.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-beanutils/commons-beanutils/1.6/commons-beanutils-1.6.pom (2.3 kB at 257 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-logging/commons-logging/1.0/commons-logging-1.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-logging/commons-logging/1.0/commons-logging-1.0.pom (163 B at 20 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-collections/commons-collections/2.0/commons-collections-2.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-collections/commons-collections/2.0/commons-collections-2.0.pom (171 B at 19 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-collections/commons-collections/2.1/commons-collections-2.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-collections/commons-collections/2.1/commons-collections-2.1.pom (3.3 kB at 417 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.pom (2.2 kB at 250 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-collections/commons-collections/3.2/commons-collections-3.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-collections/commons-collections/3.2/commons-collections-3.2.pom (11 kB at 1.4 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-validator/commons-validator/1.3.1/commons-validator-1.3.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-validator/commons-validator/1.3.1/commons-validator-1.3.1.pom (9.0 kB at 1.1 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.pom (5.3 kB at 658 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/dom4j/dom4j/1.1/dom4j-1.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/dom4j/dom4j/1.1/dom4j-1.1.pom (142 B at 18 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/oro/oro/2.0.8/oro-2.0.8.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/oro/oro/2.0.8/oro-2.0.8.pom (140 B at 18 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/sslext/sslext/1.2-0/sslext-1.2-0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/sslext/sslext/1.2-0/sslext-1.2-0.pom (653 B at 73 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/struts/struts-core/1.3.8/struts-core-1.3.8.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/struts/struts-core/1.3.8/struts-core-1.3.8.pom (4.3 kB at 539 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/struts/struts-parent/1.3.8/struts-parent-1.3.8.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/struts/struts-parent/1.3.8/struts-parent-1.3.8.pom (9.8 kB at 1.2 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/struts/struts-master/4/struts-master-4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/struts/struts-master/4/struts-master-4.pom (12 kB at 1.2 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/apache/2/apache-2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/apache/2/apache-2.pom (3.4 kB at 426 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/antlr/antlr/2.7.2/antlr-2.7.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/antlr/antlr/2.7.2/antlr-2.7.2.pom (145 B at 18 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/struts/struts-taglib/1.3.8/struts-taglib-1.3.8.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/struts/struts-taglib/1.3.8/struts-taglib-1.3.8.pom (3.1 kB at 50 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/struts/struts-tiles/1.3.8/struts-tiles-1.3.8.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/struts/struts-tiles/1.3.8/struts-tiles-1.3.8.pom (2.9 kB at 415 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/velocity/velocity/1.6.2/velocity-1.6.2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/velocity/velocity/1.6.2/velocity-1.6.2.pom (11 kB at 1.2 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.pom (4.1 kB at 516 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.pom (4.8 kB at 604 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.pom (5.0 kB at 622 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/wagon/wagon-provider-api/2.12/wagon-provider-api-2.12.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/wagon/wagon-provider-api/2.12/wagon-provider-api-2.12.pom (1.9 kB at 212 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/wagon/wagon/2.12/wagon-2.12.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/wagon/wagon/2.12/wagon-2.12.pom (21 kB at 341 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/wagon/wagon-file/2.12/wagon-file-2.12.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/wagon/wagon-file/2.12/wagon-file-2.12.pom (1.8 kB at 197 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/wagon/wagon-providers/2.12/wagon-providers-2.12.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/wagon/wagon-providers/2.12/wagon-providers-2.12.pom (2.8 kB at 112 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-site-renderer/1.7/doxia-site-renderer-1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-site-renderer/1.7/doxia-site-renderer-1.7.pom (6.6 kB at 657 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-sitetools/1.7/doxia-sitetools-1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-sitetools/1.7/doxia-sitetools-1.7.pom (14 kB at 2.0 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-decoration-model/1.7/doxia-decoration-model-1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-decoration-model/1.7/doxia-decoration-model-1.7.pom (3.1 kB at 345 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-skin-model/1.7/doxia-skin-model-1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-skin-model/1.7/doxia-skin-model-1.7.pom (2.9 kB at 49 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-module-fml/1.7/doxia-module-fml-1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-module-fml/1.7/doxia-module-fml-1.7.pom (4.6 kB at 580 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-velocity/1.1.7/plexus-velocity-1.1.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-velocity/1.1.7/plexus-velocity-1.1.7.pom (2.0 kB at 151 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-container-default/1.7.1/plexus-container-default-1.7.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-container-default/1.7.1/plexus-container-default-1.7.1.pom (2.8 kB at 306 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-containers/1.7.1/plexus-containers-1.7.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-containers/1.7.1/plexus-containers-1.7.1.pom (5.0 kB at 629 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.pom (3.8 kB at 381 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-classworlds/2.5.1/plexus-classworlds-2.5.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-classworlds/2.5.1/plexus-classworlds-2.5.1.pom (5.0 kB at 78 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/xbean/xbean-reflect/3.7/xbean-reflect-3.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/xbean/xbean-reflect/3.7/xbean-reflect-3.7.pom (5.1 kB at 566 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/xbean/xbean/3.7/xbean-3.7.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/xbean/xbean/3.7/xbean-3.7.pom (15 kB at 1.7 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/geronimo/genesis/genesis-java5-flava/2.0/genesis-java5-flava-2.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/geronimo/genesis/genesis-java5-flava/2.0/genesis-java5-flava-2.0.pom (5.5 kB at 91 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/geronimo/genesis/genesis-default-flava/2.0/genesis-default-flava-2.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/geronimo/genesis/genesis-default-flava/2.0/genesis-default-flava-2.0.pom (18 kB at 2.0 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/geronimo/genesis/genesis/2.0/genesis-2.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/geronimo/genesis/genesis/2.0/genesis-2.0.pom (18 kB at 2.0 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/com/google/collections/google-collections/1.0/google-collections-1.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/com/google/collections/google-collections/1.0/google-collections-1.0.pom (2.5 kB at 310 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/com/google/google/1/google-1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/com/google/google/1/google-1.pom (1.6 kB at 222 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-6/plexus-interactivity-api-1.0-alpha-6.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-6/plexus-interactivity-api-1.0-alpha-6.pom (726 B at 91 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-interactivity/1.0-alpha-6/plexus-interactivity-1.0-alpha-6.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-interactivity/1.0-alpha-6/plexus-interactivity-1.0-alpha-6.pom (1.1 kB at 119 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-components/1.1.9/plexus-components-1.1.9.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-components/1.1.9/plexus-components-1.1.9.pom (2.4 kB at 304 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/1.4/plexus-utils-1.4.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/1.4/plexus-utils-1.4.pom (1.2 kB at 144 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/1.0.9/plexus-1.0.9.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus/1.0.9/plexus-1.0.9.pom (7.7 kB at 122 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-i18n/1.0-beta-10/plexus-i18n-1.0-beta-10.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-i18n/1.0-beta-10/plexus-i18n-1.0-beta-10.pom (2.1 kB at 231 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/woodstox/woodstox-core-asl/4.2.0/woodstox-core-asl-4.2.0.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/woodstox/woodstox-core-asl/4.2.0/woodstox-core-asl-4.2.0.pom (1.8 kB at 226 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.pom (962 B at 107 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/woodstox/stax2-api/3.1.1/stax2-api-3.1.1.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/woodstox/stax2-api/3.1.1/stax2-api-3.1.1.pom (1.4 kB at 94 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-lang/commons-lang/2.6/commons-lang-2.6.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-lang/commons-lang/2.6/commons-lang-2.6.pom (17 kB at 1.7 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/commons/commons-parent/17/commons-parent-17.pom
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/commons/commons-parent/17/commons-parent-17.pom (31 kB at 3.1 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.jar
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.jar
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar (80 kB at 795 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.jar (26 kB at 247 kB/s)
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar (68 kB at 656 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.jar (178 kB at 1.6 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar (332 kB at 2.8 MB/s)
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar (8.8 kB at 78 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar (22 kB at 116 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-cli/commons-cli/1.2/commons-cli-1.2.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar (17 kB at 88 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar (22 kB at 118 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar (35 kB at 178 kB/s)
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-cli/commons-cli/1.2/commons-cli-1.2.jar (41 kB at 206 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/classworlds/classworlds/1.1/classworlds-1.1.jar
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.jar (10 kB at 52 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar (13 kB at 64 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.jar (39 kB at 193 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/classworlds/classworlds/1.1/classworlds-1.1.jar (38 kB at 179 kB/s)
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar (29 kB at 135 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.jar (12 kB at 58 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.jar (88 kB at 407 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar (51 kB at 179 kB/s)
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar (13 kB at 47 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/reporting/maven-reporting-impl/3.0.0/maven-reporting-impl-3.0.0.jar
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar (30 kB at 103 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/shared/maven-shared-utils/3.2.0/maven-shared-utils-3.2.0.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar (156 kB at 533 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-io/commons-io/2.5/commons-io-2.5.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.jar (49 kB at 167 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-decoration-model/1.7.4/doxia-decoration-model-1.7.4.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/reporting/maven-reporting-impl/3.0.0/maven-reporting-impl-3.0.0.jar (18 kB at 62 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar (11 kB at 37 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/shared/maven-shared-utils/3.2.0/maven-shared-utils-3.2.0.jar (165 kB at 548 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-decoration-model/1.7.4/doxia-decoration-model-1.7.4.jar (61 kB at 198 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.jar (61 kB at 200 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/wagon/wagon-provider-api/2.12/wagon-provider-api-2.12.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-io/commons-io/2.5/commons-io-2.5.jar (209 kB at 673 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/wagon/wagon-file/2.12/wagon-file-2.12.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar (202 kB at 649 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-core/1.7/doxia-core-1.7.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar (153 kB at 395 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-logging-api/1.7/doxia-logging-api-1.7.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/wagon/wagon-provider-api/2.12/wagon-provider-api-2.12.jar (55 kB at 141 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-core/1.7/doxia-core-1.7.jar (167 kB at 426 kB/s)
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar (472 kB at 1.2 MB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/httpcomponents/httpclient/4.0.2/httpclient-4.0.2.jar
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/wagon/wagon-file/2.12/wagon-file-2.12.jar (12 kB at 29 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-codec/commons-codec/1.3/commons-codec-1.3.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-logging-api/1.7/doxia-logging-api-1.7.jar (12 kB at 29 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar (61 kB at 150 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/xmlunit/xmlunit/1.5/xmlunit-1.5.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar (4.2 kB at 10 kB/s)
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar (173 kB at 423 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-sink-api/1.7/doxia-sink-api-1.7.jar
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-site-renderer/1.7/doxia-site-renderer-1.7.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/httpcomponents/httpclient/4.0.2/httpclient-4.0.2.jar (293 kB at 713 kB/s)
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-codec/commons-codec/1.3/commons-codec-1.3.jar (47 kB at 113 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-skin-model/1.7/doxia-skin-model-1.7.jar
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-module-xhtml/1.7/doxia-module-xhtml-1.7.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/xmlunit/xmlunit/1.5/xmlunit-1.5.jar (98 kB at 200 kB/s)
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-site-renderer/1.7/doxia-site-renderer-1.7.jar (62 kB at 126 kB/s)
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-sink-api/1.7/doxia-sink-api-1.7.jar (11 kB at 23 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-velocity/1.1.7/plexus-velocity-1.1.7.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-skin-model/1.7/doxia-skin-model-1.7.jar (16 kB at 32 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/velocity/velocity/1.7/velocity-1.7.jar
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-module-fml/1.7/doxia-module-fml-1.7.jar
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-module-xhtml/1.7/doxia-module-xhtml-1.7.jar (17 kB at 35 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-velocity/1.1.7/plexus-velocity-1.1.7.jar (7.7 kB at 15 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-digester/commons-digester/1.8/commons-digester-1.8.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar (189 kB at 368 kB/s)
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/maven/doxia/doxia-module-fml/1.7/doxia-module-fml-1.7.jar (39 kB at 67 kB/s)
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-digester/commons-digester/1.8/commons-digester-1.8.jar (144 kB at 278 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-validator/commons-validator/1.3.1/commons-validator-1.3.1.jar
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-chain/commons-chain/1.1/commons-chain-1.1.jar
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/dom4j/dom4j/1.1/dom4j-1.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/velocity/velocity/1.7/velocity-1.7.jar (450 kB at 767 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/oro/oro/2.0.8/oro-2.0.8.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.jar (347 kB at 589 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/sslext/sslext/1.2-0/sslext-1.2-0.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-chain/commons-chain/1.1/commons-chain-1.1.jar (90 kB at 152 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/struts/struts-core/1.3.8/struts-core-1.3.8.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/sslext/sslext/1.2-0/sslext-1.2-0.jar (26 kB at 44 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/antlr/antlr/2.7.2/antlr-2.7.2.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-validator/commons-validator/1.3.1/commons-validator-1.3.1.jar (139 kB at 233 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/struts/struts-taglib/1.3.8/struts-taglib-1.3.8.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/dom4j/dom4j/1.1/dom4j-1.1.jar (457 kB at 743 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/struts/struts-tiles/1.3.8/struts-tiles-1.3.8.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/struts/struts-core/1.3.8/struts-core-1.3.8.jar (329 kB at 532 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/struts/struts-taglib/1.3.8/struts-taglib-1.3.8.jar (252 kB at 368 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/oro/oro/2.0.8/oro-2.0.8.jar (65 kB at 95 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-container-default/1.7.1/plexus-container-default-1.7.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/antlr/antlr/2.7.2/antlr-2.7.2.jar (358 kB at 517 kB/s)
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/struts/struts-tiles/1.3.8/struts-tiles-1.3.8.jar (120 kB at 173 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-classworlds/2.5.1/plexus-classworlds-2.5.1.jar
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/apache/xbean/xbean-reflect/3.7/xbean-reflect-3.7.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-container-default/1.7.1/plexus-container-default-1.7.1.jar (231 kB at 328 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/com/google/collections/google-collections/1.0/google-collections-1.0.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar (247 kB at 350 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-6/plexus-interactivity-api-1.0-alpha-6.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/apache/xbean/xbean-reflect/3.7/xbean-reflect-3.7.jar (148 kB at 209 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-i18n/1.0-beta-10/plexus-i18n-1.0-beta-10.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-classworlds/2.5.1/plexus-classworlds-2.5.1.jar (50 kB at 70 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/woodstox/woodstox-core-asl/4.2.0/woodstox-core-asl-4.2.0.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar (575 kB at 735 kB/s)
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-6/plexus-interactivity-api-1.0-alpha-6.jar (12 kB at 15 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/org/codehaus/woodstox/stax2-api/3.1.1/stax2-api-3.1.1.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/plexus/plexus-i18n/1.0-beta-10/plexus-i18n-1.0-beta-10.jar (12 kB at 15 kB/s)
+[INFO] Downloading from nexus: http://nexus/repository/maven-group/commons-lang/commons-lang/2.6/commons-lang-2.6.jar
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar (23 kB at 29 kB/s)
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/woodstox/stax2-api/3.1.1/stax2-api-3.1.1.jar (182 kB at 227 kB/s)
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/org/codehaus/woodstox/woodstox-core-asl/4.2.0/woodstox-core-asl-4.2.0.jar (482 kB at 600 kB/s)
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/com/google/collections/google-collections/1.0/google-collections-1.0.jar (640 kB at 724 kB/s)
+[INFO] Downloaded from nexus: http://nexus/repository/maven-group/commons-lang/commons-lang/2.6/commons-lang-2.6.jar (284 kB at 320 kB/s)
+[INFO] Searching for local aggregator root...
+[INFO] Local aggregation root: /workspace/source
+[INFO] Processing change of com.*******.conferences:conference-email:0.0.1-SNAPSHOT -> 0.0.26
+[INFO] Processing com.*******.conferences:conference-email
+[INFO]     Updating project com.*******.conferences:conference-email
+[INFO]         from version 0.0.1-SNAPSHOT to 0.0.26
 [INFO] 
-[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ conference-email ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 1 resource
-[INFO] Copying 0 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ conference-email ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 2 source files to /workspace/source/target/classes
-[INFO] 
-[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ conference-email ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /workspace/source/src/test/resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ conference-email ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 1 source file to /workspace/source/target/test-classes
-[INFO] 
-[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ conference-email ---
-[INFO] 
-[INFO] -------------------------------------------------------
-[INFO]  T E S T S
-[INFO] -------------------------------------------------------
-[WARNING] Corrupted STDOUT by directly writing to native stream in forked JVM 1. See FAQ web page and the dump file /workspace/source/target/surefire-reports/2020-05-26T10-35-22_323-jvmRun1.dumpstream
-10:35:26.597 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.*******.conferences.email.DemoApplicationTests]
-10:35:26.598 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-10:35:26.598 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-10:35:26.602 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.*******.conferences.email.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-10:35:26.604 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.*******.conferences.email.DemoApplicationTests], using SpringBootContextLoader
-10:35:26.606 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.conferences.email.DemoApplicationTests]: class path resource [com/*******/conferences/email/DemoApplicationTests-context.xml] does not exist
-10:35:26.607 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.conferences.email.DemoApplicationTests]: class path resource [com/*******/conferences/email/DemoApplicationTestsContext.groovy] does not exist
-10:35:26.607 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.*******.conferences.email.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-10:35:26.609 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.*******.conferences.email.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-10:35:26.616 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.*******.conferences.email.DemoApplicationTests]
-10:35:26.618 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.*******.conferences.email.DemoApplication for test class com.*******.conferences.email.DemoApplicationTests
-10:35:26.626 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.*******.conferences.email.DemoApplicationTests]: using defaults.
-10:35:26.627 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-10:35:26.628 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
-10:35:26.629 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-10:35:26.632 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-10:35:26.633 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@301ec38b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@17a1e4ca, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@10ded6a9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@c5dc4a2, org.springframework.test.context.event.EventPublishingTestExecutionListener@4a194c39, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@52066604, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@340b9973, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@56113384, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5669c5fb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@373ebf74]
-10:35:26.634 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.email.DemoApplicationTests]
-10:35:26.636 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.email.DemoApplicationTests]
-10:35:26.838 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.email.DemoApplicationTests]
-10:35:26.838 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.email.DemoApplicationTests]
-[INFO] Running com.*******.conferences.email.DemoApplicationTests
-10:35:26.846 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.email.DemoApplicationTests]
-10:35:26.847 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.email.DemoApplicationTests]
-10:35:26.850 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.email.DemoApplicationTests]
-10:35:26.851 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.email.DemoApplicationTests]
-10:35:26.896 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@45905bff testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@2a2c13a8 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.conferences.email.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@8462f31, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@70ed52de, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2a693f59, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@4d0d9fe7, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3cce5371], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
-10:35:26.909 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.email.DemoApplicationTests]
-10:35:26.910 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.email.DemoApplicationTests]
-10:35:26.929 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@45905bff testClass = DemoApplicationTests, testInstance = com.*******.conferences.email.DemoApplicationTests@1021f6c9, testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@2a2c13a8 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.conferences.email.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@8462f31, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@70ed52de, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2a693f59, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@4d0d9fe7, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3cce5371], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
-10:35:27.007 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::        (v2.2.6.RELEASE)
-
-2020-05-26 10:35:27.823  INFO 70 --- [           main] c.s.c.email.DemoApplicationTests         : Starting DemoApplicationTests on *******-fmtok8s-email-master-re-5f74d-4-from-build-pack-lmtxd-p with PID 70 (started by root in /workspace/source)
-2020-05-26 10:35:27.825  INFO 70 --- [           main] c.s.c.email.DemoApplicationTests         : No active profile set, falling back to default profiles: default
-2020-05-26 10:35:31.503  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'io.zeebe.spring.client.config.processor.PostProcessorConfiguration' of type [io.zeebe.spring.client.config.processor.PostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-26 10:35:31.520  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'io.zeebe.spring.client.bean.value.factory.ReadAnnotationValueConfiguration' of type [io.zeebe.spring.client.bean.value.factory.ReadAnnotationValueConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-26 10:35:31.533  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebeExpressionResolver' of type [io.zeebe.spring.util.ZeebeExpressionResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-26 10:35:31.605  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'readZeebeDeploymentValue' of type [io.zeebe.spring.client.bean.value.factory.ReadZeebeDeploymentValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-26 10:35:31.619  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deploymentPostProcessor' of type [io.zeebe.spring.client.config.processor.DeploymentPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-26 10:35:31.637  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'readZeebeWorkerValue' of type [io.zeebe.spring.client.bean.value.factory.ReadZeebeWorkerValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-26 10:35:31.645  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebeWorkerPostProcessor' of type [io.zeebe.spring.client.config.processor.ZeebeWorkerPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-26 10:35:31.830  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebe.client-io.zeebe.spring.client.properties.ZeebeClientConfigurationProperties' of type [io.zeebe.spring.client.properties.ZeebeClientConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-26 10:35:31.887  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'io.zeebe.spring.client.config.ZeebeClientStarterAutoConfiguration' of type [io.zeebe.spring.client.config.ZeebeClientStarterAutoConfiguration$$EnhancerBySpringCGLIB$$2bfb5ea8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-26 10:35:31.933  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'builder' of type [io.zeebe.client.impl.ZeebeClientBuilderImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-26 10:35:31.939  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'io.zeebe.spring.client.config.ZeebeClientSpringConfiguration' of type [io.zeebe.spring.client.config.ZeebeClientSpringConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-26 10:35:32.000  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebeClientObjectFactory' of type [io.zeebe.spring.client.config.ZeebeClientSpringConfiguration$$Lambda$452/0x0000000100397840] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-26 10:35:32.027  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebeClientLifecycle' of type [io.zeebe.spring.client.ZeebeClientLifecycle] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-26 10:35:32.637  INFO 70 --- [           main] i.z.s.c.c.p.ZeebeWorkerPostProcessor     : zeebeWorker: ClassInfo(bean=com.*******.conferences.email.DemoApplication$$EnhancerBySpringCGLIB$$d5dfbbcb@59a79443, beanName=demoApplication)
-2020-05-26 10:35:39.413  INFO 70 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2020-05-26 10:35:44.219  INFO 70 --- [           main] i.z.s.c.c.p.ZeebeWorkerPostProcessor     : register job worker: ZeebeWorkerValue(type=email, name=email-worker, timeout=-1, maxJobsActive=-1, beanInfo=MethodInfo(classInfo=ClassInfo(bean=com.*******.conferences.email.DemoApplication$$EnhancerBySpringCGLIB$$d5dfbbcb@59a79443, beanName=demoApplication), method=public void com.*******.conferences.email.DemoApplication.sendEmailNotification(io.zeebe.client.api.worker.JobClient,io.zeebe.client.api.response.ActivatedJob)))
-2020-05-26 10:35:44.319  INFO 70 --- [           main] c.s.c.email.DemoApplicationTests         : Started DemoApplicationTests in 17.295 seconds (JVM running for 21.122)
-2020-05-26 10:35:44.712  WARN 70 --- [ault-executor-0] io.grpc.internal.ManagedChannelImpl      : [Channel<1>: (**-zeebe:26500)] Failed to resolve name. status=Status{code=UNAVAILABLE, description=Unable to resolve host **-zeebe, cause=java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:436)
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:272)
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:228)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at java.base/java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method)
-	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
-	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
-	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:646)
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:404)
-	... 5 more
-}
-2020-05-26 10:35:44.738  WARN 70 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
-
-io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
-	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.28.1.jar:1.28.1]
-	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:449) ~[grpc-stub-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:689) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$900(ClientCallImpl.java:577) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:751) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:740) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[grpc-core-1.28.1.jar:1.28.1]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:436) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:272) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:228) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 3 common frames omitted
-Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at java.base/java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
-	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929) ~[na:na]
-	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515) ~[na:na]
-	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298) ~[na:na]
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:646) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:404) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 5 common frames omitted
-
-2020-05-26 10:35:44.799  WARN 70 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
-
-io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
-	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.28.1.jar:1.28.1]
-	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:449) ~[grpc-stub-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:689) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$900(ClientCallImpl.java:577) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:751) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:740) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[grpc-core-1.28.1.jar:1.28.1]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:436) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:272) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:228) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 3 common frames omitted
-Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at java.base/java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
-	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929) ~[na:na]
-	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515) ~[na:na]
-	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298) ~[na:na]
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:646) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:404) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 5 common frames omitted
-
-2020-05-26 10:35:45.062  WARN 70 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
-
-io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
-	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.28.1.jar:1.28.1]
-	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:449) ~[grpc-stub-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:689) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$900(ClientCallImpl.java:577) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:751) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:740) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[grpc-core-1.28.1.jar:1.28.1]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:436) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:272) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:228) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 3 common frames omitted
-Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at java.base/java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
-	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929) ~[na:na]
-	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515) ~[na:na]
-	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298) ~[na:na]
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:646) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:404) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 5 common frames omitted
-
-2020-05-26 10:35:45.186  WARN 70 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
-
-io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
-	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.28.1.jar:1.28.1]
-	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:449) ~[grpc-stub-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:689) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$900(ClientCallImpl.java:577) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:751) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:740) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[grpc-core-1.28.1.jar:1.28.1]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:436) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:272) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:228) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 3 common frames omitted
-Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at java.base/java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
-	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929) ~[na:na]
-	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515) ~[na:na]
-	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298) ~[na:na]
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:646) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:404) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 5 common frames omitted
-
-2020-05-26 10:35:45.430  WARN 70 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
-
-io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
-	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.28.1.jar:1.28.1]
-	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:449) ~[grpc-stub-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:689) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$900(ClientCallImpl.java:577) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:751) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:740) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[grpc-core-1.28.1.jar:1.28.1]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:436) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:272) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:228) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 3 common frames omitted
-Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at java.base/java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
-	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929) ~[na:na]
-	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515) ~[na:na]
-	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298) ~[na:na]
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:646) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:404) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 5 common frames omitted
-
-2020-05-26 10:35:45.529  WARN 70 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
-
-io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
-	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.28.1.jar:1.28.1]
-	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:449) ~[grpc-stub-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:689) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$900(ClientCallImpl.java:577) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:751) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:740) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[grpc-core-1.28.1.jar:1.28.1]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:436) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:272) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:228) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 3 common frames omitted
-Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at java.base/java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
-	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929) ~[na:na]
-	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515) ~[na:na]
-	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298) ~[na:na]
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:646) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:404) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 5 common frames omitted
-
-2020-05-26 10:35:45.629  WARN 70 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
-
-io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
-	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.28.1.jar:1.28.1]
-	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:449) ~[grpc-stub-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:689) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$900(ClientCallImpl.java:577) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:751) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:740) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[grpc-core-1.28.1.jar:1.28.1]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:436) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:272) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:228) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 3 common frames omitted
-Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at java.base/java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
-	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929) ~[na:na]
-	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515) ~[na:na]
-	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298) ~[na:na]
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:646) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:404) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 5 common frames omitted
-
-2020-05-26 10:35:45.687  WARN 70 --- [ault-executor-0] io.grpc.internal.ManagedChannelImpl      : [Channel<1>: (**-zeebe:26500)] Failed to resolve name. status=Status{code=UNAVAILABLE, description=Unable to resolve host **-zeebe, cause=java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:436)
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:272)
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:228)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: **-zeebe
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:646)
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:404)
-	... 5 more
-}
-2020-05-26 10:35:45.842  WARN 70 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
-
-io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
-	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.28.1.jar:1.28.1]
-	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:449) ~[grpc-stub-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:689) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$900(ClientCallImpl.java:577) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:751) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:740) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[grpc-core-1.28.1.jar:1.28.1]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:436) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:272) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:228) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 3 common frames omitted
-Caused by: java.net.UnknownHostException: **-zeebe
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298) ~[na:na]
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:646) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:404) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 5 common frames omitted
-
-2020-05-26 10:35:45.939  WARN 70 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
-
-io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
-	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.28.1.jar:1.28.1]
-	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:449) ~[grpc-stub-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:689) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$900(ClientCallImpl.java:577) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:751) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:740) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[grpc-core-1.28.1.jar:1.28.1]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:436) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:272) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:228) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 3 common frames omitted
-Caused by: java.net.UnknownHostException: **-zeebe
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298) ~[na:na]
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:646) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:404) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 5 common frames omitted
-
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.124 s - in com.*******.conferences.email.DemoApplicationTests
-2020-05-26 10:35:46.040  WARN 70 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
-
-io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
-	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.28.1.jar:1.28.1]
-	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:449) ~[grpc-stub-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:689) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$900(ClientCallImpl.java:577) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:751) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:740) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[grpc-core-1.28.1.jar:1.28.1]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:436) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:272) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:228) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 3 common frames omitted
-Caused by: java.net.UnknownHostException: **-zeebe
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298) ~[na:na]
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:646) ~[grpc-core-1.28.1.jar:1.28.1]
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:404) ~[grpc-core-1.28.1.jar:1.28.1]
-	... 5 common frames omitted
-
-[WARNING] ForkStarter IOException: org.springframework.test.context.CacheAwareContextLoaderDelegate)]
- using SpringBootContextLoader
- Context.groovy}.
- non-private, non-final, nested classes annotated with @Configuration.
- org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
- org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@22bac7bc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@63798ca7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4612b856, org.springframework.test.context.event.EventPublishingTestExecutionListener@22875539, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5674e1f2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@79c7532f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2a448449, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@32f232a5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@43f82e78]. See the dump file /workspace/source/target/surefire-reports/2020-05-26T10-35-22_323-jvmRun1.dumpstream
-[INFO] 
-[INFO] Results:
-[INFO] 
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
-[INFO] 
-[INFO] 
-[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ conference-email ---
-[INFO] Building jar: /workspace/source/target/conference-email-0.0.13.jar
-[INFO] 
-[INFO] --- spring-boot-maven-plugin:2.2.6.RELEASE:repackage (repackage) @ conference-email ---
-[INFO] Replacing main artifact with repackaged archive
-[INFO] 
-[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ conference-email ---
-[INFO] Installing /workspace/source/target/conference-email-0.0.13.jar to /home/jenkins/.mvnrepository/com/*******/conferences/conference-email/0.0.13/conference-email-0.0.13.jar
-[INFO] Installing /workspace/source/pom.xml to /home/jenkins/.mvnrepository/com/*******/conferences/conference-email/0.0.13/conference-email-0.0.13.pom
-[INFO] 
-[INFO] --- maven-deploy-plugin:2.8.2:deploy (default-deploy) @ conference-email ---
-[INFO] Using alternate deployment repository local-nexus::default::http://nexus/repository/maven-releases/
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  58.405 s
-[INFO] Finished at: 2020-05-26T10:35:53Z
+[INFO] Total time:  15.978 s
+[INFO] Finished at: 2020-07-08T08:51:51Z
 [INFO] ------------------------------------------------------------------------
 
-Showing logs for build [32msalaboy-fmtok8s-email-master-re-5f74d-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-skaffold-version[0m
-v1.0.1
-
-Showing logs for build [32msalaboy-fmtok8s-email-master-re-5f74d-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
-E0526 10:35:56.231882      10 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
-	For verbose messaging see aws.Config.CredentialsChainVerboseErrors
-[36mINFO[0m[0001] Using dockerignore file: /workspace/source/.dockerignore 
-[36mINFO[0m[0001] Retrieving image manifest openjdk:11-jre-slim 
-E0526 10:35:56.690595      10 metadata.go:154] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
-E0526 10:35:56.694014      10 metadata.go:166] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
-[36mINFO[0m[0002] Retrieving image manifest openjdk:11-jre-slim 
-[36mINFO[0m[0003] Built cross stage deps: map[]                
-[36mINFO[0m[0003] Retrieving image manifest openjdk:11-jre-slim 
-[36mINFO[0m[0004] Retrieving image manifest openjdk:11-jre-slim 
-[36mINFO[0m[0004] Executing 0 build triggers                   
-[36mINFO[0m[0004] cmd: EXPOSE                                  
-[36mINFO[0m[0004] Adding exposed port: 8080/tcp                
-[36mINFO[0m[0004] Resolving srcs [pom.xml target/lib*]...      
-[36mINFO[0m[0005] Checking for cached layer gcr.io/camunda-researchanddevelopment/cache:12f8d4c7ee00853dc1c9cb6f94f783ba478ba22c90bcf5efa87116ce171cacd2... 
-[36mINFO[0m[0005] No cached layer found for cmd COPY pom.xml target/lib* /opt/lib/ 
-[36mINFO[0m[0005] Resolving srcs [target/*.jar]...             
-[36mINFO[0m[0005] Unpacking rootfs as cmd COPY pom.xml target/lib* /opt/lib/ requires it. 
-[36mINFO[0m[0011] ENV PORT 8080                                
-[36mINFO[0m[0011] No files changed in this command, skipping snapshotting. 
-[36mINFO[0m[0011] ENV CLASSPATH /opt/lib                       
-[36mINFO[0m[0011] No files changed in this command, skipping snapshotting. 
-[36mINFO[0m[0011] EXPOSE 8080                                  
-[36mINFO[0m[0011] cmd: EXPOSE                                  
-[36mINFO[0m[0011] Adding exposed port: 8080/tcp                
-[36mINFO[0m[0011] No files changed in this command, skipping snapshotting. 
-[36mINFO[0m[0011] Resolving srcs [pom.xml target/lib*]...      
-[36mINFO[0m[0011] COPY pom.xml target/lib* /opt/lib/           
-[36mINFO[0m[0011] Resolving srcs [pom.xml target/lib*]...      
-[36mINFO[0m[0011] Resolving 1 paths                            
-[36mINFO[0m[0011] Taking snapshot of files...                  
-[36mINFO[0m[0011] Pushing layer gcr.io/camunda-researchanddevelopment/cache:12f8d4c7ee00853dc1c9cb6f94f783ba478ba22c90bcf5efa87116ce171cacd2 to cache now 
-[36mINFO[0m[0011] Resolving srcs [target/*.jar]...             
-[36mINFO[0m[0012] COPY target/*.jar /opt/app.jar               
-[36mINFO[0m[0012] Resolving srcs [target/*.jar]...             
-[36mINFO[0m[0012] Resolving 1 paths                            
-[36mINFO[0m[0012] Taking snapshot of files...                  
-[36mINFO[0m[0013] WORKDIR /opt                                 
-[36mINFO[0m[0013] cmd: workdir                                 
-[36mINFO[0m[0013] Changed working directory to /opt            
-[36mINFO[0m[0013] No files changed in this command, skipping snapshotting. 
-[36mINFO[0m[0014] ENTRYPOINT exec java $JAVA_OPTS -jar app.jar 
-[36mINFO[0m[0014] No files changed in this command, skipping snapshotting. 
-[36mINFO[0m[0014] Pushing layer gcr.io/camunda-researchanddevelopment/cache:0cd3f7e10cdaaaafb8892bac8f47b6f87c31cc40469792bc71cc82ca50f13cb8 to cache now 
-
-Showing logs for build [32msalaboy-fmtok8s-email-master-re-5f74d-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
-no CVE provider running in the current ** namespace so skip adding image to be analysed
-
-Showing logs for build [32msalaboy-fmtok8s-email-master-re-5f74d-4[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
-Converted /workspace/source/charts/fmtok8s-email to an unshallow repository
-Generating change log from git ref c8fe3af62021bc91105e93846448cae854d5112f => d2a9623787f3b3e5c506dc7c50a62e2f1fb86273
-Associating user x-0 in users.jenkins.io with email *******@gmail.com to git GitProvider user with login -0 as emails match
-Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
-WARNING: Failed to enrich commit 8b5944adae7b00fe2eec4f3c5c46fba86ff3696f with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
-Associating user x-0 in users.jenkins.io with email *******@gmail.com to git GitProvider user with login -0 as emails match
-Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
-WARNING: Failed to enrich commit 8b5944adae7b00fe2eec4f3c5c46fba86ff3696f with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
-Finding issues in commit messages using git format
-WARNING: No release found for *******/fmtok8s-email and tag v0.0.13 so creating a new release
-Updated the release information at https://github.com/*******/fmtok8s-email/releases/tag/v0.0.13
-generated: /workspace/source/charts/fmtok8s-email/templates/release.yaml
-Created Release fmtok8s-email-0-0-13 resource in namespace **
-Updating PipelineActivity *******-fmtok8s-email-master-4 with version 0.0.13
-Updated PipelineActivities *******-fmtok8s-email-master-4 with release notes URL: https://github.com/*******/fmtok8s-email/releases/tag/v0.0.13
-
-Showing logs for build [32msalaboy-fmtok8s-email-master-re-5f74d-4[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
-WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
-Successfully added Helm repository storage.googleapis.com.
-Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
-Successfully added Helm repository jenkins-x-chartmuseum.
-WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Uploading chart file fmtok8s-email-0.0.13.tgz to http://jenkins-x-chartmuseum:8080/api/charts
-Received 201 response: {"saved":true}
-
-Showing logs for build [32msalaboy-fmtok8s-email-master-re-5f74d-4[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
-WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
-WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Promoting app fmtok8s-email version 0.0.13 to namespace **-staging
-Created Pull Request: https://github.com/*******/environment-jnation-tests-staging/pull/15
-Added label updatebot to Pull Request https://github.com/*******/environment-jnation-tests-staging/pull/15
-got git provider status pending from PR https://github.com/*******/environment-jnation-tests-staging/pull/15
-got git provider status pending from PR https://github.com/*******/environment-jnation-tests-staging/pull/15
-got git provider status pending from PR https://github.com/*******/environment-jnation-tests-staging/pull/15
-got git provider status pending from PR https://github.com/*******/environment-jnation-tests-staging/pull/15
-Pull Request https://github.com/*******/environment-jnation-tests-staging/pull/15 is merged at sha e8bc9359da8dfaa91f96c2bb861616dc24cdd428
-Pull Request merged but we are not waiting for the update pipeline to complete!
-
-Showing logs for build [32msalaboy-fmtok8s-email-master-re-5f74d-4[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-step10[0m
-Using https://github.com/*******/fmtok8s-email as source for change discovered from git repo in /workspace/source
-Updated Pull Request: https://github.com/*******/fmtok8s-kubecon-app/pull/15
-Added label updatebot to Pull Request https://github.com/*******/fmtok8s-kubecon-app/pull/15
+running command: ** step tag --version \$(cat VERSION)
+Updating chart version in charts/fmtok8s-email/Chart.yaml to 0.0.26
+Updating repository in charts/fmtok8s-email/values.yaml to gcr.io/camunda-researchanddevelopment/fmtok8s-email
+Updating tag in charts/fmtok8s-email/values.yaml to 0.0.26
+error: Have you set up a git credential helper? See https://help.github.com/articles/caching-your-github-password-in-git/
+: git output: To https://github.com/*******/fmtok8s-email.git
+ ! [rejected]        v0.0.26 -> v0.0.26 (already exists)
+error: failed to push some refs to 'https://github.com/*******/fmtok8s-email.git'
+hint: Updates were rejected because the tag already exists in the remote.: failed to run 'git push origin v0.0.26' command in directory '', output: 'To https://github.com/*******/fmtok8s-email.git
+ ! [rejected]        v0.0.26 -> v0.0.26 (already exists)
+error: failed to push some refs to 'https://github.com/*******/fmtok8s-email.git'
+hint: Updates were rejected because the tag already exists in the remote.'
+error: failed to set the version on release pipelines: failed to run '/bin/sh -c ** step tag --version $(cat VERSION)' command in directory '/workspace/source', output: ''
+[31m
+Pipeline failed on stage 'meta-pipeline' : container 'step-create-tekton-crds'. The execution of the pipeline has stopped.[0m
