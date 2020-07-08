@@ -6,7 +6,6 @@ import io.zeebe.client.api.response.ActivatedJob;
 import io.zeebe.client.api.worker.JobClient;
 import io.zeebe.spring.client.EnableZeebeClient;
 import io.zeebe.spring.client.annotation.ZeebeWorker;
-import io.zeebe.spring.client.config.ZeebeActuatorConfiguration;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -19,10 +18,10 @@ import java.util.*;
 @RestController
 @EnableZeebeClient
 @Slf4j
-public class DemoApplication {
+public class EmailService {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(EmailService.class, args);
     }
 
     private ObjectMapper objectMapper = new ObjectMapper();
@@ -32,7 +31,7 @@ public class DemoApplication {
 
     @GetMapping("/info")
     public String infoWithVersion() {
-        return "{ \"name\" : \"Email Service\", \"version\" : \"" + version + "++\", \"source\": \"https://github.com/salaboy/fmtok8s-email/releases/tag/v"+version+"\" }";
+        return "{ \"name\" : \"Email Service\", \"version\" : \"" + version + "\", \"source\": \"https://github.com/salaboy/fmtok8s-email/releases/tag/v"+version+"\" }";
     }
 
     @PostMapping("/")
