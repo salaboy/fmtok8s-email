@@ -29,9 +29,12 @@ public class EmailService {
     @Value("${version:0.0.0}")
     private String version;
 
+    @Value("${EXTERNAL_URL:http://fmtok8s-api-gateway-jx-staging.34.90.79.39.nip.io}")
+    private String externalURL;
+
     @GetMapping("/info")
     public String infoWithVersion() {
-        return "{ \"name\" : \"Email Service\", \"version\" : \"v" + version + "\", \"source\": \"https://github.com/salaboy/fmtok8s-email/releases/tag/v"+version+"\" }";
+        return "{ \"name\" : \"Email Service\", \"version\" : \"v" + version + "\", \"source\": \"https://github.com/salaboy/fmtok8s-email/releases/tag/v" + version + "\" }";
     }
 
     @PostMapping("/")
@@ -39,12 +42,18 @@ public class EmailService {
         String toEmail = email.get("toEmail");
         String emailTitle = email.get("title");
         String emailContent = email.get("content");
+        log.info("+-------------------------------------------------------------------+");
         printEmail(toEmail, emailTitle, emailContent);
+        log.info("+-------------------------------------------------------------------+\n\n");
     }
 
 
     @PostMapping("/notification")
     public void sendEmailNotification(@RequestBody Proposal proposal) {
+        sendEmailNotificationWithLink(proposal, false);
+    }
+
+    private void sendEmailNotificationWithLink(Proposal proposal, boolean withLink) {
         String emailBody = "Dear " + proposal.getAuthor() + ", \n";
         String emailTitle = "Conference Committee Communication";
         emailBody += "\t\t We are";
@@ -62,14 +71,23 @@ public class EmailService {
             emailBody += " rejected ";
         }
         emailBody += "for this conference.";
-        printEmail(proposal.getEmail(),emailTitle, emailBody );
+        printProposalEmail(proposal, emailTitle, emailBody, withLink);
     }
 
-    private void printEmail(String to, String title, String body){
-        log.info("+-------------------------------------------------------------------+");
-        log.info("\t Email Sent to: " + to);
+    private void printEmail(String toEmail, String title, String body) {
+        log.info("\t Email Sent to: " + toEmail);
         log.info("\t Email Title: " + title);
         log.info("\t Email Body: " + body);
+    }
+
+    private void printProposalEmail(Proposal proposal, String title, String body, boolean withLink) {
+        log.info("+-------------------------------------------------------------------+");
+        printEmail(proposal.getEmail(), title, body);
+        if (withLink) {
+            log.info("\t Please CURL the following link to confirm \n" +
+                    "\t\t that you are committing to speak in our conference: \n" +
+                    "\t\t curl -X POST " + externalURL + "/speakers/" + proposal.getId());
+        }
         log.info("+-------------------------------------------------------------------+\n\n");
     }
 
@@ -77,6 +95,13 @@ public class EmailService {
     public void sendEmailNotification(final JobClient client, final ActivatedJob job) {
         Proposal proposal = objectMapper.convertValue(job.getVariablesAsMap().get("proposal"), Proposal.class);
         sendEmailNotification(proposal);
+        client.newCompleteCommand(job.getKey()).send();
+    }
+
+    @ZeebeWorker(name = "email-worker", type = "email-with-link")
+    public void sendEmailNotificationWithLink(final JobClient client, final ActivatedJob job) {
+        Proposal proposal = objectMapper.convertValue(job.getVariablesAsMap().get("proposal"), Proposal.class);
+        sendEmailNotificationWithLink(proposal, true);
         client.newCompleteCommand(job.getKey()).send();
     }
 

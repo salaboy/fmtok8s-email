@@ -4,13 +4,15 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Proposal {
+    private String id;
     private String title;
     private String description;
     private String author;
     private String email;
     private boolean approved = false;
 
-    public Proposal(String title, String description, String author, String email, boolean approved) {
+    public Proposal(String id, String title, String description, String author, String email, boolean approved) {
+        this.id = id;
         this.title = title;
         this.description = description;
         this.author = author;
@@ -19,6 +21,14 @@ public class Proposal {
     }
 
     public Proposal() {
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -64,11 +74,13 @@ public class Proposal {
     @Override
     public String toString() {
         return "Proposal{" +
-                "title='" + title + '\'' +
+                "id='" + id + '\'' +
+                ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
                 ", author='" + author + '\'' +
                 ", email='" + email + '\'' +
                 ", approved=" + approved +
                 '}';
     }
+
 }
