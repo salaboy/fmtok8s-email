@@ -29,7 +29,7 @@ public class EmailService {
     @Value("${version:0.0.0}")
     private String version;
 
-    @Value("${EXTERNAL_URL:http://fmtok8s-api-gateway-jx-staging.34.90.79.39.nip.io}")
+    @Value("${EXTERNAL_URL:http://fmtok8s-api-gateway-jx-staging.35.222.17.41.nip.io}")
     private String externalURL;
 
     @GetMapping("/info")
