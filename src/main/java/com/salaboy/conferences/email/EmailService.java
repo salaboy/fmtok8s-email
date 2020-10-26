@@ -74,6 +74,16 @@ public class EmailService {
         printProposalEmail(proposal, emailTitle, emailBody, withLink);
     }
 
+    private void sendEmailToCommittee(Proposal proposal) {
+        String emailTitle = "Conference Committee Please Review Proposal";
+        String emailBody = "Dear Committee Member, \n" +
+                "please review and accept or reject the following proposal \n";
+        emailBody += "\t From Author: " + proposal.getAuthor() + "\n";
+        emailBody += "\t With Id: " + proposal.getId() + "\n";
+        emailBody += "\t Notification Sent at: " + new Date() + "\n";
+        printEmail("committee@conference.org", emailTitle, emailBody);
+    }
+
     private void printEmail(String toEmail, String title, String body) {
         log.info("\t Email Sent to: " + toEmail);
         log.info("\t Email Title: " + title);
@@ -105,5 +115,11 @@ public class EmailService {
         client.newCompleteCommand(job.getKey()).send();
     }
 
+    @ZeebeWorker(name = "email-worker", type = "email-to-committee")
+    public void sendEmailCommittee(final JobClient client, final ActivatedJob job) {
+        Proposal proposal = objectMapper.convertValue(job.getVariablesAsMap().get("proposal"), Proposal.class);
+        sendEmailToCommittee(proposal);
+        client.newCompleteCommand(job.getKey()).send();
+    }
 
 }
