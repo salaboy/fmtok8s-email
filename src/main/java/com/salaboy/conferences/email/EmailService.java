@@ -77,7 +77,7 @@ public class EmailService {
     private void sendEmailToCommittee(Proposal proposal) {
         String emailTitle = "Conference Committee Please Review Proposal";
         String emailBody = "Dear Committee Member, \n" +
-                "please review and accept or reject the following proposal \n";
+                "\t\t please review and accept or reject the following proposal \n";
         emailBody += "\t From Author: " + proposal.getAuthor() + "\n";
         emailBody += "\t With Id: " + proposal.getId() + "\n";
         emailBody += "\t Notification Sent at: " + new Date() + "\n";
