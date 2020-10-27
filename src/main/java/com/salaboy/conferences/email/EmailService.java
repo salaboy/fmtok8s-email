@@ -81,7 +81,9 @@ public class EmailService {
         emailBody += "\t From Author: " + proposal.getAuthor() + "\n";
         emailBody += "\t With Id: " + proposal.getId() + "\n";
         emailBody += "\t Notification Sent at: " + new Date() + "\n";
+        log.info("+-------------------------------------------------------------------+");
         printEmail("committee@conference.org", emailTitle, emailBody);
+        log.info("+-------------------------------------------------------------------+");
     }
 
     private void printEmail(String toEmail, String title, String body) {
