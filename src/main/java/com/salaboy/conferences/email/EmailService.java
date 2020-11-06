@@ -1,9 +1,17 @@
 package com.salaboy.conferences.email;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.salaboy.cloudevents.helper.CloudEventsHelper;
 import com.salaboy.conferences.email.model.Proposal;
+import io.cloudevents.CloudEvent;
+import io.cloudevents.core.builder.CloudEventBuilder;
+import io.cloudevents.core.format.EventFormat;
+import io.cloudevents.core.provider.EventFormatProvider;
+import io.cloudevents.jackson.JsonFormat;
 import io.zeebe.client.api.response.ActivatedJob;
 import io.zeebe.client.api.worker.JobClient;
+import io.zeebe.cloudevents.ZeebeCloudEventsHelper;
 import io.zeebe.spring.client.EnableZeebeClient;
 import io.zeebe.spring.client.annotation.ZeebeWorker;
 import lombok.extern.slf4j.Slf4j;
@@ -11,7 +19,12 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.reactive.function.client.ExchangeFilterFunction;
+import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Mono;
 
+import java.net.URI;
+import java.time.OffsetDateTime;
 import java.util.*;
 
 @SpringBootApplication
@@ -29,8 +42,14 @@ public class EmailService {
     @Value("${version:0.0.0}")
     private String version;
 
-    @Value("${EXTERNAL_URL:http://fmtok8s-api-gateway-jx-staging.35.222.17.41.nip.io}")
+    @Value("${EXTERNAL_URL:http://fmtok8s-api-gateway.default.34.91.93.206.xip.io}")
     private String externalURL;
+
+    @Value("${EVENTS_ENABLED:true}")
+    private Boolean eventsEnabled;
+
+    @Value("${K_SINK:http://broker-ingress.knative-eventing.svc.cluster.local/default/default}")
+    private String K_SINK;
 
     @GetMapping("/info")
     public String infoWithVersion() {
@@ -51,6 +70,7 @@ public class EmailService {
     @PostMapping("/notification")
     public void sendEmailNotification(@RequestBody Proposal proposal) {
         sendEmailNotificationWithLink(proposal, false);
+        emitEmailWithForProposalEvent(proposal);
     }
 
     private void sendEmailNotificationWithLink(Proposal proposal, boolean withLink) {
@@ -107,6 +127,7 @@ public class EmailService {
     public void sendEmailNotification(final JobClient client, final ActivatedJob job) {
         Proposal proposal = objectMapper.convertValue(job.getVariablesAsMap().get("proposal"), Proposal.class);
         sendEmailNotification(proposal);
+        emitEmailWithForProposalEvent(proposal);
         client.newCompleteCommand(job.getKey()).send();
     }
 
@@ -114,6 +135,7 @@ public class EmailService {
     public void sendEmailNotificationWithLink(final JobClient client, final ActivatedJob job) {
         Proposal proposal = objectMapper.convertValue(job.getVariablesAsMap().get("proposal"), Proposal.class);
         sendEmailNotificationWithLink(proposal, true);
+        emitEmailWithForProposalEvent(proposal);
         client.newCompleteCommand(job.getKey()).send();
     }
 
@@ -121,7 +143,58 @@ public class EmailService {
     public void sendEmailCommittee(final JobClient client, final ActivatedJob job) {
         Proposal proposal = objectMapper.convertValue(job.getVariablesAsMap().get("proposal"), Proposal.class);
         sendEmailToCommittee(proposal);
+        emitEmailWithForProposalEvent(proposal);
         client.newCompleteCommand(job.getKey()).send();
     }
 
+    public void emitEmailWithForProposalEvent(Proposal proposal){
+        if(eventsEnabled) {
+            String proposalString = null;
+            try {
+                proposalString = objectMapper.writeValueAsString(proposal);
+                proposalString = objectMapper.writeValueAsString(proposalString); //needs double quoted ??
+            } catch (JsonProcessingException e) {
+                e.printStackTrace();
+            }
+            CloudEventBuilder cloudEventBuilder = CloudEventBuilder.v1()
+                    .withId(UUID.randomUUID().toString())
+                    .withTime(OffsetDateTime.now().toZonedDateTime()) // bug-> https://github.com/cloudevents/sdk-java/issues/200
+                    .withType("Email.Sent")
+                    .withSource(URI.create("email-service.default.svc.cluster.local"))
+                    .withData(proposalString.getBytes())
+                    .withDataContentType("application/json")
+                    .withSubject(proposal.getTitle());
+
+            CloudEvent zeebeCloudEvent = ZeebeCloudEventsHelper
+                    .buildZeebeCloudEvent(cloudEventBuilder)
+                    .withCorrelationKey(proposal.getId()).build();
+
+            logCloudEvent(zeebeCloudEvent);
+            WebClient webClient = WebClient.builder().baseUrl(K_SINK).filter(logRequest()).build();
+
+            WebClient.ResponseSpec postCloudEvent = CloudEventsHelper.createPostCloudEvent(webClient, zeebeCloudEvent);
+
+            postCloudEvent.bodyToMono(String.class)
+                    .doOnError(t -> t.printStackTrace())
+                    .doOnSuccess(s -> log.info("Cloud Event Posted to K_SINK -> " + K_SINK + ": Result: " +  s))
+                    .subscribe();
+        }
+    }
+
+    private void logCloudEvent(CloudEvent cloudEvent) {
+        EventFormat format = EventFormatProvider
+                .getInstance()
+                .resolveFormat(JsonFormat.CONTENT_TYPE);
+
+        log.info("Cloud Event: " + new String(format.serialize(cloudEvent)));
+
+    }
+
+    private static ExchangeFilterFunction logRequest() {
+        return ExchangeFilterFunction.ofRequestProcessor(clientRequest -> {
+            log.info("Request: " + clientRequest.method() + " - " + clientRequest.url());
+            clientRequest.headers().forEach((name, values) -> values.forEach(value -> log.info(name + "=" + value)));
+            return Mono.just(clientRequest);
+        });
+    }
 }
