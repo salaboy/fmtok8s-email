@@ -42,8 +42,6 @@ public class EmailService {
     @Value("${version:0.0.0}")
     private String version;
 
-    @Value("${EXTERNAL_URL:http://fmtok8s-api-gateway.default.34.91.93.206.xip.io}")
-    private String externalURL;
 
     @Value("${EVENTS_ENABLED:true}")
     private Boolean eventsEnabled;
@@ -118,7 +116,7 @@ public class EmailService {
         if (withLink) {
             log.info("\t Please CURL the following link to confirm \n" +
                     "\t\t that you are committing to speak in our conference: \n" +
-                    "\t\t curl -X POST " + externalURL + "/speakers/" + proposal.getId());
+                    "\t\t curl -X POST <REPLACE API GATEWAY URL>/speakers/" + proposal.getId());
         }
         log.info("+-------------------------------------------------------------------+\n\n");
     }
