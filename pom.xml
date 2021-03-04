@@ -16,7 +16,7 @@
 
     <properties>
         <java.version>11</java.version>
-        <zeebe.version>0.24.0</zeebe.version>
+        <zeebe.version>0.26.2</zeebe.version>
         <springdoc-openapi-ui.version>1.2.32</springdoc-openapi-ui.version>
     </properties>
 
