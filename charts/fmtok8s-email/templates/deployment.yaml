@@ -32,32 +32,30 @@ spec:
         env:
           - name: VERSION
             value: {{ .Chart.Version }}
-{{- if .Values.externalConfigMapForZeebeClient }}
+{{- if .Values.clientName }}
           - name: ZEEBE_CLIENT_BROKER_CONTACTPOINT
             valueFrom:
               configMapKeyRef:
-                name: cc-client-configmap
+                name: {{.Values.clientName}}-configmap
                 key: ZEEBE_ADDRESS
           - name: ZEEBE_CLIENT_ID
             valueFrom:
               configMapKeyRef:
                 key: ZEEBE_CLIENT_ID
-                name: cc-client-configmap
+                name: {{.Values.clientName}}-configmap
           - name: ZEEBE_AUTHORIZATION_SERVER_URL
             valueFrom:
               configMapKeyRef:
                 key: ZEEBE_AUTHORIZATION_SERVER_URL
-                name: cc-client-configmap
-{{- end }}
-{{- if .Values.externalSecretForZeebeClient }}
+                name: {{.Values.clientName}}-configmap
           - name: ZEEBE_CLIENT_SECRET
             valueFrom:
               secretKeyRef:
                 key: ZEEBE_CLIENT_SECRET
-                name: cc-client-secret
-{{- end }}
+                name: {{.Values.clientName}}-secret
           - name: ZEEBE_CLIENT_SECURITY_PLAINTEXT
             value: "false"
+{{- end }}
 {{- range $pkey, $pval := .Values.env }}
         - name: {{ $pkey }}
           value: {{ quote $pval }}

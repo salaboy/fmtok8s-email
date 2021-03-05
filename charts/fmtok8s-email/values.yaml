@@ -71,8 +71,7 @@ readinessProbe:
   successThreshold: 1
   timeoutSeconds: 1
 
-externalConfigMapForZeebeClient: false
-externalSecretForZeebeClient: false
+clientName: 
 
 # custom ingress annotations on this service
 ingress:
