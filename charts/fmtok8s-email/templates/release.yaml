@@ -1,0 +1,38 @@
+{{- if .Capabilities.APIVersions.Has "jenkins.io/v1/Release" }}
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-03-05T13:29:39Z"
+  deletionTimestamp: null
+  name: '{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}'
+spec:
+  commits:
+  - author:
+      email: jenkins-x@googlegroups.com
+      name: salaboy
+    branch: master
+    committer:
+      email: jenkins-x@googlegroups.com
+      name: salaboy
+    message: |
+      release 0.0.53
+    sha: e9fb8e4eaa882c21c95baf37e829131dc29c7376
+  - author:
+      email: salaboy@gmail.com
+      name: salaboy
+    branch: master
+    committer:
+      email: salaboy@gmail.com
+      name: salaboy
+    message: |
+      removing external URL variable and add replace manually
+    sha: 8f009fc5f1dda36bb61eb565704d196363124233
+  gitHttpUrl: https://github.com/salaboy/fmtok8s-email
+  gitOwner: salaboy
+  gitRepository: fmtok8s-email
+  name: '{{ .Chart.Name }}'
+  releaseNotesURL: https://github.com/salaboy/fmtok8s-email/releases/tag/v0.0.54
+  version: v0.0.54
+status: {}
+ 
+{{- end }}
