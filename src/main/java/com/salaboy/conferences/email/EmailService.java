@@ -49,10 +49,6 @@ public class EmailService {
     @Value("${K_SINK:http://broker-ingress.knative-eventing.svc.cluster.local/default/default}")
     private String K_SINK;
 
-    @GetMapping("/info")
-    public String infoWithVersion() {
-        return "{ \"name\" : \"Email Service\", \"version\" : \"v" + version + "++\", \"source\": \"https://github.com/salaboy/fmtok8s-email/releases/tag/v" + version + "\" }";
-    }
 
     @PostMapping("/")
     public void sendEmail(@RequestBody Map<String, String> email) {
